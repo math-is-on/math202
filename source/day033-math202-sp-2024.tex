@@ -1,0 +1,175 @@
+% Created 2024-04-01 Mon 12:10
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{2 April 2024}
+\title{Limits of Sequences}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Limits of Sequences},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org1e4e1d3}
+\begin{frame}[label={sec:org71ffac0}]{Announcements}
+\begin{enumerate}
+\item Homework!
+\item Exam Corrections!
+\item Project!
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org81e4bde}
+\begin{frame}[label={sec:org50efd67}]{The Limit of a Sequence}
+With sequences, we are usually interested in what happens in what's
+known as the \uline{\hspace*{1in}} of the sequence (i.e. end behaviour):
+
+\begin{definition}[Limit of a Sequence]
+Suppose \(\left\{ a_n \right\}\) is a sequence of real numbers.  When
+we say
+\[
+\lim_{n\rightarrow \infty} a_n = L\]
+we mean that we can make \(a_n\) as close to \(L\) as we like by taking
+\(n\) to be ``large enough''.  If such an \(L\) exists, we call the sequence
+\(a_n\) \uline{\hspace*{1in}}.  If no such \(L\) exists, we call the sequence \uline{\hspace*{1in}}.
+\end{definition}
+
+Let's make some of these ideas a little more precise.
+\end{frame}
+
+\begin{frame}[label={sec:orgf2a1f97}]{The Limit of a Sequence}
+\end{frame}
+
+\begin{frame}[label={sec:org835f1bd}]{Limit Law}
+If \(a_n = f(n)\) for some function \(f\) for all \(n \ge 1\) (or some
+starting index) then if there exists \(L\) such that
+\(\lim_{x\rightarrow \infty} f(x) = L\), then it must be the case that
+\(\lim_{n\rightarrow \infty} a_n =\) \uline{\hspace*{1in}}.
+
+\vspace{1in}
+\end{frame}
+
+\begin{frame}[label={sec:orgfb8a629}]{Example}
+Evaluate the limits of the sequences:
+\begin{enumerate}
+\item \(a_n = \frac{1}{2^n}\)
+\item \(b_n = \left( -1 \right)^n\)
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org9ec20de}]{Limit Laws}
+Let \(\left\{ a_n \right\}\) and \(\left\{ b_n \right\}\) be sequences such that
+\(\lim_{n\rightarrow \infty} a_n  = A\) and \(\lim_{n\rightarrow\infty} b_n = B,\)  where
+\(A\) and \(B\) are real numbers.  Let \(c\) be a real number.  Then the following
+limit laws hold:
+\begin{enumerate}
+\item \(\lim_{n\rightarrow \infty} c =\)
+\item \(\lim_{n\rightarrow \infty}ca_n =\)
+\item \(\lim_{n\rightarrow \infty} \left( a_n \pm b_n \right) =\)
+\item \(\lim_{n\rightarrow \infty} (a_nb_n) =\)
+\item \(\lim_{n\rightarrow \infty} \left( \frac{a_n}{b_n} \right) =\)
+\end{enumerate}
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgff3beef}]{Example}
+Evaluate
+\[\lim_{k\rightarrow \infty} \frac{1 - r^k}{1 - r} \]
+(Your answer will depend on the value of \(r\).)
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org7b2678d}]{Example}
+Evaluate
+\[
+   \lim_{m\rightarrow \infty} \left( 1 - \frac{2}{m} \right)^m.\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org98ebefb}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orga405e5b}]{2 More Important Theorems}
+We'll take the following theorems without proof:
+\begin{theorem}[Continuous Functions and Convergent Sequences]
+Suppose \(\left\{ a_n \right\}\) is a convergent sequence that
+converges to \(L\) and \(f\) is a function of a real variable that is
+continuous at \(L\).  Then, the sequence \(\left\{ f \left( a_n \right) \right\}\)
+is \uline{\hspace*{1in}} with limit \uline{\hspace*{1in}}.
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:org42f3b7e}]{2 More Important Theorems}
+\begin{theorem}[Squeeze Theorem]
+Suppose \(\left\{ a_n \right\},\) \(\left\{ b_n \right\}\) and \(\left\{ c_n \right\}\)
+are all sequences that satisfy
+\[
+a_n \le b_n \le c_n\]
+for all \(n \ge 1\) (or for all \(n\) greater than some initial index).  If
+\[
+\lim_{n\rightarrow \infty} a_n = L\]
+and
+\[
+\lim_{n\rightarrow \infty} c_n = L\]
+Then
+\[
+\lim_{n\rightarrow \infty} b_n = \hspace{1in}\]
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:orgaef0936}]{Example}
+Use the squeeze theorem to show
+\[
+\lim_{k\rightarrow \infty} \frac{\sin k}{k} = 0
+\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgfd2b24b}]{Example}
+Let
+\[
+S_k = 1 + \frac{1}{2} + \ldots + \frac{1}{2^k}\]
+Let's try to find
+\begin{enumerate}
+\item A ``nicer'' way to write \(S_k\) and
+\item \(\lim_{k\rightarrow \infty} S_k\)
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+\end{document}

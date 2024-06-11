@@ -1,0 +1,112 @@
+yyyyyyyy#+title: Trigonometric substitution
+#+author: Chase Mathison
+#+date: 27 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+beamer_frame_level: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Don't forget about exam corrections!
+2. Homework assigned in MyOpenMath.
+3. Office hours M-F, 10am - 11am
+
+* The Lecture
+** Trig substitution, why do we need it?
+Today we will finally learn how to find an antiderivative of the
+function
+\[
+\sqrt{1-x^2}. \]
+Integrating functions that involve \(\sqrt{a^2-x^2} \) is one of the
+key motivations for developing trigonometric substitution.
+
+We'll also use trigonometric substitution to integrate functions that
+involve \( \sqrt{x^2-a^2} \) and \( \sqrt{a^2 + x^2}. \) So almost
+anytime that we deal with integrating a function that has one of these
+three forms in it, you can pretty safely bet that trigonometric
+substitution will be involved.
+
+** A reminder: SOHCAHTOA
+
+#+BEGIN_EXPORT latex 
+\begin{center}
+\begin{tikzpicture}
+\draw[thick] (0,0) -- ++(0:1in) -- ++(90:2in) -- cycle;
+\draw (0.5,0) arc (0:62:0.5cm);
+\draw (0,0) ++(31:0.6cm) node[above right,inner sep=0] {\(\theta \)};
+\draw (1in,0) rectangle (0.9in,0.1in);
+\end{tikzpicture}
+\end{center}
+#+END_EXPORT
+
+** The idea
+I'll illustrate the main idea for integrating functions that involve
+\(\sqrt{a^2-x^2} \) with the following example.
+\[\int\limits_{}^{} \sqrt{1-x^2}\,dx \]
+\vspace{10in}
+
+** Integrals involving \(\sqrt{a^2-x^2} \)
+In general, to integrate a function that involves \(\sqrt{a^2-x^2} \),
+use the following strategy:
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{../img/trigSub1.png}
+\end{center}
+#+END_EXPORT
+
+** Example
+Evaluate
+\[\int\limits_{}^{} \frac{x^2}{\sqrt{4-x^2}}\,dx \]
+\vspace{10in}
+
+** Example
+Evaluate
+\[
+\int\limits_0^{\frac{1}{2}} \frac{1}{1-x^2}\,dx \]
+\vspace{10in}
+
+** Example
+
+** Integrals involving \(\sqrt{a^2+x^2} \)
+
+Integrating functions that involve \(\sqrt{a^2+x^2} \) works in a very
+similar way, we just need to make a slightly different trigonometric
+substitution:
+
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{../img/trigSub2f.png}
+\end{center}
+#+END_EXPORT
+
+** Example
+
+Evaluate
+\[
+\int\limits_{}^{} \frac{1}{\sqrt{3+x^2}}\,dx \]
+\vspace{10in}
+
+** Example
+

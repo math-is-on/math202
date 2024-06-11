@@ -1,0 +1,113 @@
+% Created 2024-01-31 Wed 10:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{1 February 2024}
+\title{Volumes by Slicing}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Volumes by Slicing},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org7bf6cec}
+\begin{frame}[label={sec:orga16ce3e}]{Announcements}
+\begin{enumerate}
+\item Homework in MyOpenMath.
+\item Quiz in Canvas.
+\item Office hours: 10am - 11am.
+\end{enumerate}
+\end{frame}
+
+\section{Volumes by slicing}
+\label{sec:org039c35b}
+\begin{frame}[label={sec:org0639fcf}]{Volumes by slicing}
+Another application of integration is in finding volumes if we know
+the cross sectional area of an object.  As an example, let's look at a
+right circular cone with radius \(r = 3\) units, and height \(h =
+10\) units.
+
+If we take cross sections of this cylinder that are parallel to the
+circular base, we get a constant cross section (which is what???).
+
+Let's use the ``little slice'' method to figure out the volume of this
+shape!
+\end{frame}
+
+\begin{frame}[label={sec:orgcc50f50}]{Volumes by slicing}
+\end{frame}
+
+\begin{frame}[label={sec:org5a8c14c}]{Volumes by slicing}
+We can apply this same idea even when the cross sectional area is not
+constant, but is known.  Let's use this idea to find the volume of a
+pyramid with a square base (of side length 4 units) and a height of 5
+units.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org34f88bf}]{Volumes by slicing}
+\end{frame}
+
+\begin{frame}[label={sec:org784bfe2}]{Volumes by slicing: Problem solving strategy}
+We've just illustrated the ``little slice method'' for volumes. To apply it in general,
+use the following strategy:
+\begin{enumerate}
+\item Examine the solid of interest and determine the shape of a
+\uline{\hspace*{1in}} of the object with respect to a certain
+direction. (You should always draw pictures at this step!)
+\item Determine a formula for the cross-sectional \uline{\hspace*{1in}}.
+\item \uline{\hspace*{1in}} the area over the appropriate interval to find the
+volume.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:orgd9a4d23}]{Example}
+You want to design a building with a floor that is an isosceles
+triangle with base 6 units and legs 5 units.  The top of the building
+will be parabolas that connect the sides of equal length of the
+triangle, with heights that are equal to their widths.  What is the
+total volume of this building?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org4000f9e}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org58cc827}]{Example}
+\end{frame}
+\end{document}

@@ -1,0 +1,146 @@
+#+title: Trigonometric Integrals
+#+author: Chase Mathison
+#+date: 22 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+beamer_frame_level: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Don't forget about exam corrections.
+2. Office hours 10am - 11am.
+
+* Lecture
+** Today's mission
+Our goal today is to tackle three types of trigonometric integrals:
+1. Integrals of the form \[\int\limits_{}^{} \cos^j \left( x \right)
+   \sin^k \left( x \right)\,dx \] where \(k,j \) are nonnegative
+   integers (0,1,2,...) and not both 0. 
+2. Integrals of the form \[\int\limits_{}^{} \sin(ax)\cos(bx)\,dx \]
+   for real numbers \(a \) and \(b \). 
+3. Integrals of the form \[\int\limits_{}^{} \tan^j \left( x \right)
+   \sec^k \left( x \right)\,dx \] where \(k,j \) are nonnegative
+   integers.
+   
+** Today's mission 
+Why do we need to cover these?
+
+The main reason we need to cover these is that they will come up quite
+frequently when we learn about trigonometric substitution tomorrow.
+Let's begin by looking at 1.
+
+Really the main idea behind most of what we do today lies in a handful
+of trig identities and trig derivatives, but most importantly:
+#+BEGIN_EXPORT latex 
+\begin{align*}
+&\cos^2(x) + \sin^2(x) = 1,\,\frac{d}{dx}(\sin(x)) = \cos(x),\,\frac{d}{dx}(\cos(x)) = -\sin(x)\\
+&1 + \tan^2 (x) = \sec^2(x),\,\frac{d}{dx}(\tan(x)) = \sec^2(x),\,\frac{d}{dx}(\sec(x)) = \sec(x)\tan(x)
+\end{align*}
+#+END_EXPORT
+
+** Sines and Cosines
+There are 4 cases we could have when looking at the integral
+\[
+\int\limits_{}^{} \sin^k \left( x \right) \cos^j \left( x \right)\,dx
+\]
+We could have
+1. \(k \) is even and \(j \) is even.  This is the annoying case.
+2. \(k \) is even and \(j \) is odd.  This is a relatively easy case.
+3. \(k \) is odd and \(j \) is even. This is handled almost exactly as
+   the second case. 
+4. \(k \) is odd and \(j \) is odd. This is also relatively simple and
+   handled in a similar way as 2 and 3. 
+   
+Let's look at specific examples, starting from the bottom, of each of these cases and then
+generalize.
+
+** \(k \) odd and \(j \) odd
+Find
+\[
+\int\limits_{}^{} \sin^3 \left( x \right)\cos^5 \left( x \right)\,dx
+\]
+\vspace{10in}
+
+** \(k \) odd and \(j \) odd
+
+** \(k \) even and \(j \) odd
+Find
+\[
+\int\limits_{}^{} \sin^4 \left( x \right)\cos^5 \left( x \right)\,dx
+\]
+\vspace{10in}
+
+** \(k \) even and \(j \) odd
+
+** \(k \) odd and \(j \) even
+Find
+\[
+\int\limits_{}^{} \sin^5 \left( x \right)\cos^4 \left( x \right)\,dx
+\]
+\vspace{10in}
+
+** \(k \) odd and \(j \) even
+
+** \(k \) even and \(j \) even (not both 0)
+Find
+\[
+\int\limits_{}^{}\sin^2 \left( x \right)\,dx \]
+\vspace{10in}
+
+** \(k \) even and \(j \) even (not both 0)
+
+** One more example
+Find
+\[
+\int\limits_{}^{} \sin^2 \left( x \right)\cos^2 \left( x \right)\,dx
+\]
+\vspace{10in}
+
+** In general
+In general, we can use this problem solving strategy when evaluating
+integrals of this kind:
+#+BEGIN_EXPORT latex 
+\includegraphics[width=\textwidth]{../img/day018-01.png}
+#+END_EXPORT
+
+** Other sines and cosines
+We've seen how to integrate powers of sines and cosines, but what
+about an integral of the form
+\[
+\int\limits_{}^{} \sin \left( 2x \right)\cos \left( 3x \right)\,dx? \]
+We could do integration by parts and arrive back at the same integral
+(my favorite type of integral), or we could take advantage of some
+trig identities.
+#+BEGIN_EXPORT latex 
+\includegraphics[width=\textwidth]{../img/day018-02.png}
+#+END_EXPORT
+
+** Let's try it
+Evaluate
+\[\int\limits_{}^{} \sin \left( 2x \right)\cos \left( 3x \right)\,dx
+\]
+using trig identities.
+\vspace{10in}
+

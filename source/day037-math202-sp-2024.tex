@@ -1,0 +1,150 @@
+% Created 2024-04-09 Tue 21:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{10 April 2024}
+\title{The Integral Test}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={The Integral Test},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org5f19695}
+\begin{frame}[label={sec:orgfdbad9e}]{Announcements}
+\begin{enumerate}
+\item Homework in MyOpEnMaTh.
+\item Office hours, 10am - 11am.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org89f4f62}
+\begin{frame}[label={sec:org37b8f9a}]{The Integral Test}
+Let's look at another test that will bring back improper integrals!  Let's look at 2 specific examples to illustrate the \uline{\hspace*{1in}}.
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n}\qquad \text{and} \quad \sum\limits_{n=1}^{\infty} \frac{1}{n^2}\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgc51cad6}]{The Integral Test}
+\end{frame}
+
+\begin{frame}[label={sec:org7066ab1}]{The Integral Test}
+\end{frame}
+
+\begin{frame}[label={sec:orgfe3e3c0}]{The Integral Test}
+What we just did works in general, as long as the series in question satisfies a few conditions.
+
+\begin{theorem}[The Integral Test]
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) is a series with \alert{strictly} \uline{\hspace*{1in}} \alert{terms}.  If there is a continuous function
+\(f(x)\) and an integer \(N\) such that
+\begin{enumerate}
+\item \(f\) is a decreasing function, and
+\item \(f(n) = a_n\) for all \(n \ge N\),
+\end{enumerate}
+
+Then
+\[
+\sum\limits_{n=1}^{\infty} a_n \quad \text{and} \quad \int\limits_N^{\infty} f(x)\,dx\]
+\uline{\hspace*{3in}}.
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:orgecdf6ba}]{Example}
+Determine which of the following series converge by using the integral test:
+\begin{enumerate}
+\item \[\sum\limits_{n=1}^{\infty} \frac{1}{n^2}\]
+\item \[\sum\limits_{n=2}^{\infty} \frac{1}{n\ln(n)}\]
+\item \[\sum\limits_{n=1}^{\infty} \frac{1}{n^2 + n}\]
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org83c1679}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orga4c0fa3}]{\(p-\)series}
+Show that
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n^p}\]
+converges if \(p > 1\) and diverges if \(p \le 1.\)
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org6f629f2}]{\(p-\)series}
+\end{frame}
+
+\begin{frame}[label={sec:orgfd85a7f}]{Another use for the integral test}
+In general if \(a_n = f(n)\) for a continuous, decreasing function,
+and \(\sum\limits_{n=1}^{\infty} a_n\) converges, it is \alert{NOT} the case
+that \[ \sum\limits_{n=1}^{\infty} a_n = \int\limits_1^{\infty}
+f(x)\,dx\] But, we can still gain information about the value of the
+series from the value of the improper integral.  Let's see how:
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org94d0d7a}]{Another use for the integral test}
+\end{frame}
+
+\begin{frame}[label={sec:org3adae89}]{Integral test remainder estimate}
+We've shown the following:
+
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) is a convergent series that satisfies
+the criteria for use with the integral test (with corresponding function \(f\)).
+
+Let \(S_N\) denote the partial sum \(\sum\limits_{n=1}^N a_n\). Then
+\[
+S_N + \int\limits_{N+1}^{\infty} f(x)\,dx < \sum\limits_{n=1}^{\infty}a_n < S_N + \int\limits_N^{\infty} f(x)\,dx. \]
+If we denote \(R_N = \sum\limits_{n=1}^{\infty} a_n - S_N\) (called the \uline{\hspace*{1in}}), then another way to say this is
+\[
+\int\limits_{N+1}^{\infty} f(x)\,dx < R_N < \int\limits_N^{\infty} f(x)\,dx.\]
+\end{frame}
+
+\begin{frame}[label={sec:org37eeacb}]{Example}
+It can be shown that
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}.\]
+How many terms do we need to use in a partial sum to estimate this series
+with a remainder (error) of \(10^{-3}\)?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org07a6541}]{Example}
+\end{frame}
+\end{document}

@@ -1,0 +1,111 @@
+% Created 2024-05-08 Wed 07:53
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{8 May 2024}
+\title{Even More Taylor Series!}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Even More Taylor Series!},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orga103bd9}
+\begin{frame}[label={sec:org3c44db7}]{Announcements}
+\begin{enumerate}
+\item Final exam next Wednesday at 8am.
+\item If you're behind on any assignments, make sure to get them turned
+it before the final for credit.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org124f4f1}
+\begin{frame}[label={sec:org581a3b0}]{Using the Remainder}
+Because the remainder term for a Taylor polynomial is \alert{defined} to be
+\[
+R_n(x) = p_n(x) - f(x)\]
+
+We can say that the Taylor series for the function \(f\) centered at \(a\)
+will converge to \(f\) (on it's interval of convergence) if
+\[
+\lim_{n\rightarrow \infty} R_n(x) = \hspace{1in}\]
+
+This happens with most functions in this class.
+\end{frame}
+
+\begin{frame}[label={sec:orgb183126}]{Using the Remainder}
+Find the \(n\)th Taylor polynomial centered at \(0\), \(p_{n}(x)\) for
+the function \(f(x) = \cos(x)\), and the corresponding remainder term \(R_n(x).\)
+Show that for any \(x\), \(\lim_{n\rightarrow \infty}R_n(x) = 0.\)
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org5d98faf}]{Working with Taylor series}
+Here are some of the most important power series for you to know:
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgae6f2cc}]{Working with Taylor series}
+Find the Maclaurin series for the function \(f(x) = \cos(x^2).\) Use this to find
+\(f^{(80)}(0).\)
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf87fce0}]{Working with Taylor series}
+\end{frame}
+
+\begin{frame}[label={sec:org9dfdd3a}]{Example}
+Find the Taylor series centered at \(x = 3\) for the function \(f(x) = e^x.\)
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgc32e411}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org8ccabb7}]{Example}
+Use a Maclaurin series to find
+\[
+\int\limits_0^1 e^{-x^2}\,dx\]
+(Your answer will be in the form of a convergent series).
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3397ba3}]{Example}
+\end{frame}
+\end{document}

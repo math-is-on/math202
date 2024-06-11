@@ -1,0 +1,150 @@
+#+title: Limits of Sequences
+#+author: Chase Mathison
+#+date: 2 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework!
+2. Exam Corrections!
+3. Project!
+
+* Lecture
+** The Limit of a Sequence
+With sequences, we are usually interested in what happens in what's
+known as the _\hspace*{1in}_ of the sequence (i.e. end behaviour):
+
+*** Limit of a Sequence                                      :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+Suppose \(\left\{ a_n \right\}\) is a sequence of real numbers.  When
+we say
+\[
+\lim_{n\rightarrow \infty} a_n = L\]
+we mean that we can make \(a_n\) as close to \(L\) as we like by taking
+\(n\) to be "large enough".  If such an \(L\) exists, we call the sequence
+\(a_n\) _\hspace*{1in}_.  If no such \(L\) exists, we call the sequence _\hspace*{1in}_.
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+Let's make some of these ideas a little more precise.
+
+** The Limit of a Sequence
+
+** Limit Law
+If \(a_n = f(n)\) for some function \(f\) for all \(n \ge 1\) (or some
+starting index) then if there exists \(L\) such that
+\(\lim_{x\rightarrow \infty} f(x) = L\), then it must be the case that
+\(\lim_{n\rightarrow \infty} a_n = \) _\hspace*{1in}_.
+
+\vspace{1in}
+
+** Example
+Evaluate the limits of the sequences:
+1. \( a_n = \frac{1}{2^n} \)
+2. \( b_n = \left( -1 \right)^n\)
+\vspace{10in}
+
+** Limit Laws
+Let \( \left\{ a_n \right\}\) and \( \left\{ b_n \right\}\) be sequences such that
+\(\lim_{n\rightarrow \infty} a_n  = A\) and \( \lim_{n\rightarrow\infty} b_n = B,\)  where
+\(A\) and \(B\) are real numbers.  Let \(c\) be a real number.  Then the following
+limit laws hold:
+1. \(\lim_{n\rightarrow \infty} c = \)
+2. \(\lim_{n\rightarrow \infty}ca_n = \)
+3. \(\lim_{n\rightarrow \infty} \left( a_n \pm b_n \right) = \)
+4. \(\lim_{n\rightarrow \infty} (a_nb_n) = \)
+5. \(\lim_{n\rightarrow \infty} \left( \frac{a_n}{b_n} \right) = \)
+
+\vspace{10in}
+
+** Example
+Evaluate
+\[\lim_{k\rightarrow \infty} \frac{1 - r^k}{1 - r} \]
+(Your answer will depend on the value of \(r\).)
+\vspace{10in}
+
+** Example
+Evaluate
+\[
+   \lim_{m\rightarrow \infty} \left( 1 - \frac{2}{m} \right)^m.\]
+\vspace{10in}
+
+** Example
+
+** 2 More Important Theorems
+
+We'll take the following theorems without proof:
+*** Continuous Functions and Convergent Sequences               :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+Suppose \(\left\{ a_n \right\}\) is a convergent sequence that
+converges to \(L\) and \(f\) is a function of a real variable that is
+continuous at \(L\).  Then, the sequence \(\left\{ f \left( a_n \right) \right\}\)
+is _\hspace*{1in}_ with limit _\hspace*{1in}_.
+
+** 2 More Important Theorems
+
+*** Squeeze Theorem                                             :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+Suppose \( \left\{ a_n \right\},\) \(\left\{ b_n \right\}\) and \( \left\{ c_n \right\}\)
+are all sequences that satisfy
+\[
+a_n \le b_n \le c_n\]
+for all \(n \ge 1\) (or for all \(n\) greater than some initial index).  If
+\[
+\lim_{n\rightarrow \infty} a_n = L\]
+and
+\[
+\lim_{n\rightarrow \infty} c_n = L\]
+Then
+\[
+\lim_{n\rightarrow \infty} b_n = \hspace{1in}\]
+
+** Example
+Use the squeeze theorem to show
+\[
+\lim_{k\rightarrow \infty} \frac{\sin k}{k} = 0
+\]
+\vspace{10in}
+
+** Example
+Let
+\[
+S_k = 1 + \frac{1}{2} + \ldots + \frac{1}{2^k}\]
+Let's try to find
+1. A "nicer" way to write \(S_k\) and
+2. \(\lim_{k\rightarrow \infty} S_k\)
+\vspace{10in}

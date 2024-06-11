@@ -1,0 +1,55 @@
+#+title: Taylor Series!
+#+author: Chase Mathison
+#+date: 29 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+ 
+* Announcements
+1. Exam Wednesday.
+2. No class Thursday.
+3. Office hours 10am - 11am.
+
+* Lecture
+** Taylor Series
+So we know how to find a power series for a function that's related to
+\(\frac{a}{1-r},\) but how would we find a power series for the
+function \(f(x) = \sin(x)\) centered at \(0\)?  \vspace{10in}
+
+** Taylor Series
+
+** Taylor Series
+
+** Taylor Series
+Given a function \(f(x)\) with as many derivatives as we want at \(x = a\), the _\hspace*{1in}_ for
+\(f\) centered at \(a\) is defined to be the following series:
+
+\vspace{1in}
+
+If \(a = 0\), we call this series the _\hspace*{1in}_ for \(f\) instead.
+
+** Example
+Use the Maclaurin series of \(\sin(x)\) that we just found to find the
+Maclaurin series for \(\cos(x).\)
+\vspace{10in}

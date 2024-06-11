@@ -1,0 +1,73 @@
+#+title: Improper Integrals, One Last Time
+#+author: Chase Mathison
+#+date: 28 March 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath.
+2. Exam corrections
+
+* Lecture
+** A Comparison Theorem
+Let's say I want to know if
+\[
+\int\limits_1^{\infty} \frac{1}{x^2 + x}\,dx\]
+converges or diverges.  Can we say anything about convergence without
+actually evaluating this integral?
+
+\vspace{10in}
+
+** A Comparison Theorem
+
+Suppose that \(0 \le f(x) \le g(x)\) for all \(x \in \left( a,\infty \right)\). Then
+- If
+  \(
+  \int\limits_a^{\infty} f(x)\,dx
+  \)
+  _\hspace*{1in}_, we can say that
+  \[
+  \int\limits_a^{\infty} g(x)\,dx \hspace{2in}\]
+- If
+  \(
+  \int\limits_a^{\infty} g(x)\,dx\)
+  _\hspace*{1in}_, we can say that
+  \[
+  \int\limits_a^{\infty} f(x)\,dx \hspace{2in}\]
+
+** Example
+Does the following integral converge or diverge?
+
+\[
+\int\limits_1^{\infty} \frac{1}{x^3 + x^2 + x + 1}\,dx\]
+\vspace{10in}
+   
+** Example
+Does the following integral converge or diverge?
+
+\[
+\int\limits_1^{\infty} \frac{1+t}{1+t^2}\,dt\]
+\vspace{10in}

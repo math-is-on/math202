@@ -1,0 +1,75 @@
+#+title: Applications of Sequences
+#+author: Chase Mathison
+#+date: 4 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework and Project
+2. Office hours, 10am - 11am.
+
+* Lecture
+** Example
+Let's look at some examples of where sequences come up in real life.
+
+#+attr_latex: :center t :width 0.7\textwidth
+[[./q1.png]]
+
+\vspace{10in}
+
+** Example
+
+** Example
+
+#+attr_latex: :center t :width 0.7\textwidth
+[[./q2.png]]
+
+\vspace{10in}
+
+** Example
+
+** Example
+
+#+attr_latex: :center t :width 0.7\textwidth
+[[./q3.png]]
+
+\vspace{10in}
+
+** Example
+
+** Example
+Sequences really show up everywhere.  Let's look at one more example of where they show up: The Fibonacci Sequence
+
+\[
+F_{n+1} = F_n + F_{n-1},\qquad F_0 = F_1 = 1\]
+
+Let's play around with this sequence for a bit.
+
+\vspace{10in}
+
+** Example

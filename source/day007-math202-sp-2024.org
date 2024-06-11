@@ -1,0 +1,90 @@
+#+title: Area between curves
+#+author: Chase Mathison
+#+date: 31 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+beamer_frame_level: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+
+* Announcements
+** Announcements
+1. Stay up to date on homework!
+3. Office hours: M - F, 10am - 11am.
+
+** Another way
+
+Let's look at a different way to do this problem:
+
+Find the area bounded by the curves defined by the functions
+\[ f \left( x \right) = x^2, \quad g \left( x \right) = 2-x, \quad h
+\left( x \right) = 0. \]
+for \(0 \le x \le 2. \)
+
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.4\textwidth]{../img/day005-ex1.png}
+\end{center}
+#+END_EXPORT
+
+** Another way
+
+To find this area last time, we had to break this area into 2 pieces
+and then find the areas separately.
+
+A way to tackle this problem all at once is to instead switch to
+integrating in terms of _\hspace*{1in}_ instead of in terms of \(x \).
+
+When we do this, instead of a "top" curve and a "bottom" curve, we are
+really looking at a _\hspace*{1in}_ curve and a _\hspace*{1in}_ curve.
+
+Let's try to tackle this area by integrating in terms of \(y \)
+instead of \(x \).
+
+** Example
+
+Find the area bounded by the curves defined by the functions
+\[ f \left( x \right) = x^2, \quad g \left( x \right) = 2-x, \quad h
+\left( x \right) = 0. \]
+for \(0 \le x \le 2, \) by integrating with respect to the dependent
+variable instead of the independent variable.
+\vspace{10in}
+
+** Example
+
+** How it works in general
+In general, if we want to find the area bounded by two functions of
+\(y \), we can use the "little slice" method as follows:
+\vspace{10in}
+
+** How it works in general
+
+** Example
+Find the area of the region bounded by the curves
+\[ y = \frac{1}{x^2}, \, y = 2x, \, y = 2. \]
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.5\textwidth]{../img/day005-ex2.png}
+\end{center}
+#+END_EXPORT
+
+** Example

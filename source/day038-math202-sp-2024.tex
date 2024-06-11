@@ -1,0 +1,143 @@
+% Created 2024-04-14 Sun 22:41
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{11 April 2024}
+\title{The Comparison Tests}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={The Comparison Tests},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orge345e4c}
+\begin{frame}[label={sec:org453fc95}]{Announcements}
+\begin{enumerate}
+\item Homework due, and new homework in MyOpenMath.
+\item Office hours, 10am - 11am.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:orge41902b}
+\begin{frame}[label={sec:org58cf061}]{The Comparison Test}
+Now that we have some series for which we can describe their
+convergence/divergence, let's look at another test for convergence!
+\end{frame}
+
+\begin{frame}[label={sec:orgac27d25}]{The Comparison Test}
+Let \(\sum\limits_{n=1}^{\infty} a_n\) be a series with \(a_n \ge 0\) for all \(n\), and suppose
+\(\sum\limits_{n=1}^{\infty} b_n\) is another series which we know is convergent.
+
+Then, if there is an \(N\) such that \(a_n\) \uline{\hspace*{0.25in}} \(b_n\) for all \(n \ge N\), then
+\[
+\sum\limits_{n=1}^{\infty} a_n\]
+\uline{\hspace*{1in}}.
+
+Similarly, if \(\sum\limits_{n=1}^{\infty} b_n\) is a series which we know is divergent,
+and there is an \(N\) such that \(a_n\) \uline{\hspace*{0.25in}} \(b_n\) for all \(n \ge N\), then
+\[
+\sum\limits_{n=1}^{\infty} a_n\]
+\uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org1530b07}]{Example}
+Discuss the convergence/divergence of
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n!}.\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org9f4624e}]{Example}
+Discuss the convergence/divergence of
+\[
+\sum\limits_{n=1}^{\infty} \frac{\sin^2(n)}{n^2}\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf86e12e}]{Example}
+Discuss the convergence/divergence of
+\[
+\sum\limits_{n=2}^{\infty} \frac{1}{\ln(n)}\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org441e1b5}]{The Limit Comparison Test}
+The comparison test is nice, but it's a little too simplistic sometimes.  For instance,
+if we want to examine the convergence/divergence of the series
+\[
+\sum\limits_{n=2}^{\infty} \frac{1}{n^2-1}\]
+then our natural instinct is to compare this series to \(\sum\limits_{n=2}^{\infty} \frac{1}{n^2},\)
+but
+\[
+\frac{1}{n^2-1} \hspace{1in} \frac{1}{n^2}\]
+so the comparison test wouldn't tell us anything here.  This is where the limit comparison
+test is useful!
+\end{frame}
+
+\begin{frame}[label={sec:org70f04c3}]{The Limit Comparison Test}
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) and \(\sum\limits_{n=1}^{\infty} b_n\) are series with \(a_n,b_n \ge 0\).
+Let \(M = \lim_{n\rightarrow \infty} \frac{a_n}{b_n}\).  Then
+\begin{enumerate}
+\item If \(M > 0\), is a real number, then
+\(\sum\limits_{n=1}^{\infty} a_n \text{ and } \sum\limits_{n=1}^{\infty} b_n\)
+have the \uline{\hspace*{1in}}.
+\item If \(M = 0\) and \(\sum\limits_{n=1}^{\infty} b_n\) converges, then
+\(\sum\limits_{n=1}^{\infty} a_n\)
+\uline{\hspace*{1in}}.
+\item If \(M = \infty\) and \(\sum\limits_{n=1}^{\infty} b_n\) diverges, then
+\(\sum\limits_{n=1}^{\infty} a_n\)
+\uline{\hspace*{1in}}.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:org610709b}]{Example}
+Use the limit comparison test to discuss the convergence/divergence of the series
+\[
+\sum\limits_{n=2}^{\infty} \frac{1}{n^2-1}\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgce3b004}]{Example}
+Use the limit comparison test to discuss the convergence/divergence of the series
+\[
+\sum\limits_{n=2}^{\infty} \frac{1}{2^{\ln(\ln(n))}}\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orge96cc1b}]{Example}
+\end{frame}
+\end{document}

@@ -1,0 +1,135 @@
+#+title: \(u-\)substitution
+#+author: Chase Mathison
+#+date: 24 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath.
+2. Office hours cancelled today.
+
+* Lecture
+** \(u-\)substitution: a closer look
+Sometimes it is "obvious" that we need to use a \(u- \) substitution
+when evaluating an integral, such as
+\[
+\int\limits_0^1 x \left( x^2-4 \right)^{10}\,dx \]
+
+For this integral, it's pretty clear that if we make the \(u-
+\)substitution
+#+BEGIN_EXPORT latex 
+\begin{align*}
+u = & x^2-4 \\
+\frac{1}{2}du = & x\,dx
+\end{align*}
+#+END_EXPORT
+
+** \(u-\)substitution: a closer look
+Then, this integral transforms into
+\[
+\int\limits_{-4}^{-3} \frac{1}{2}u^{10}\,du \]
+which can be evaluated simply using the power rule:
+\vspace{10in}
+
+** \(u- \)substitution: a closer look
+\(u- \)substitutions can be used in other situations that
+aren't quite as obvious, or as a preliminary step to make an integral
+have a simpler form to use other techniques of integration.
+
+For instance, let's try to use \(u- \)substitution to evaluate
+\[
+\int\limits_{}^{} \frac{x}{\sqrt{x-1}}\,dx \]
+\vspace{10in}
+
+** \(u- \)substitution: a closer look
+
+** \(u- \)substitution
+Here is a general problem solving strategy for integrals involving
+\(u- \)substitution: 
+
+1. Look at the integrand to determined if there is a composition of
+   functions of the form \(f \left( g \left( x \right) \right) \). 
+2. Substitute \(u = g \left( x \right) \) and \(du = g' \left( x
+   \right)\,dx \). 
+3. If there are any \(x \)'s remaining in the integral after this
+   substitution, replace them using \(u = g(x) \). 
+4. Evaluate the integral in terms of \(u \), if possible.  If it is
+   not possible, we might need to go back and change our \(u-
+   \)substitution. 
+5. Write your final answer in terms of \(x \) if finding an indefinite
+   integral.
+   
+** Examples
+Evaluate the following integral:
+\[
+\int\limits_{}^{} x \left( 1-x \right)^{99}\,dx \]
+\vspace{10in}
+
+
+** Examples
+
+** Examples
+Evaluate the following integral:
+\[
+\int\limits_{-1}^{1}t \left( 1-t^2 \right)^{10}\,dt \]
+\vspace{10in}
+
+** Examples
+
+** Examples
+Evaluate the following integral:
+\[
+\int\limits_{}^{}x \sqrt{x+1}\,dx \]
+\vspace{10in}
+
+** Examples
+
+** Examples
+Evaluate the following integral:
+\[
+\int \cos^3 \left(  \theta \right) \sin \left( \theta \right)\,d\theta
+\]
+\vspace{10in}
+
+** Examples
+
+** Examples
+Evaluate the following integral:
+\[
+\int\limits_0^{\pi/2} \cos^3 \left( \theta \right)\,d\theta \]
+\vspace{10in}
+
+** Examples
+
+** Examples
+Evaluate the following integral:
+\[
+\int\limits_{}^{} t \sin \left( t^2 \right)\cos \left( t^2 \right)\,dt
+\]
+\vspace{10in}
+   

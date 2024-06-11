@@ -1,0 +1,126 @@
+% Created 2024-04-09 Tue 21:04
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{9 April 2024}
+\title{The Geometric Series and the Divergence Test}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={The Geometric Series and the Divergence Test},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org5da53c4}
+\begin{enumerate}
+\item Homework in MyOpenMath
+\item Office hours, 10am - 11am
+\item Free coffee and cookies on Fridays in MEC at noon.
+\end{enumerate}
+
+\section{Lecture}
+\label{sec:orgc8a3afc}
+\begin{frame}[label={sec:org43f779e}]{The Geometric Series}
+Now let's investigate a very special type of a series: a series in which the individual terms
+form a geometric sequence will be called a \uline{\hspace*{1in}} and has the form
+\[
+\sum\limits_{n=0}^{\infty} ar^n = a + ar + ar^2 + ar^3 + \ldots\]
+Let's see what we can say about a series like this.
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf062e3f}]{The Geometric Series}
+\end{frame}
+
+\begin{frame}[label={sec:org6053274}]{The Geometric Series}
+We've shown
+
+\begin{theorem}[Geometric Series]
+The series
+\[
+a + ar + ar^2 + ar^3 + \ldots = \sum\limits_{n=0}^{\infty} ar^n\]
+\uline{\hspace*{2in}} if \(|r| < 1\) and \uline{\hspace*{1in}} if \(|r| \ge 1.\)
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:org0684c8f}]{Example}
+What is
+\[
+.123123123\ldots\]
+as a fraction?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgbdfb22b}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgd4a7208}]{Example}
+What is the area of the Sierpinski Triangle?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orga22d791}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgae498f6}]{The Divergence Test}
+It would be nice if, given a series, there was a quick way to tell if the series
+was divergent.  Thankfully, we have the divergence test for that!
+
+\begin{theorem}[The Divergence Test]
+If \(\lim_{n\rightarrow \infty} a_n \neq 0\), then the series
+\[
+\sum\limits_{n=1}^{\infty} a_n\]
+\uline{\hspace*{1in}}.
+\end{theorem}
+
+Note!
+\end{frame}
+
+\begin{frame}[label={sec:org63164ab}]{Example}
+Which of the following series can we immediately say diverges?
+\begin{enumerate}
+\item \[\sum\limits_{n=1}^{\infty} \frac{1}{n!}\]
+\item \[\sum\limits_{n=2}^{\infty} \frac{n+1}{n-1}\]
+\item \[\sum\limits_{n=1}^{\infty} n^{\frac{1}{n}}\]
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org45d6227}]{Example}
+\end{frame}
+\end{document}

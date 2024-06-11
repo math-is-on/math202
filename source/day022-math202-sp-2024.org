@@ -1,0 +1,91 @@
+#+title: Trig Substitution, Part II
+#+author: Chase Mathison
+#+date: 28 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework
+2. Office hours, 10am - 11am
+
+** Integrals involving \(\sqrt{x^2-a^2} \)
+
+It should be no surprise that we can integrate functions of the form
+\(\sqrt{x^2-a^2} \) as well:
+
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.8\textwidth]{../img/trigSub3.png}
+\end{center}
+#+END_EXPORT
+
+** Example
+
+Evaluate
+\[
+\int\limits_{}^{} \sqrt{2x^2 - 8}\,dx \]
+\vspace{10in}
+
+** Example
+
+** Example
+Find
+\[\int\limits_2^3 \sqrt{2x^2-8}\,dx \]
+\vspace{10in}
+
+
+** Completing the square
+Before we look at the next example, we need to discuss how to
+/complete the square/. (Something that technically is supposed to be
+taught in precalc, but hardly ever is).
+
+We would like to rewrite
+\[ax^2 + bx + c \]
+in the form
+\[ a\left( x-h \right)^2 + k. \]
+
+Let's figure out what \(h \) and \(k \) need to be.
+\vspace{10in}
+
+** Completing the square
+
+** Completing the square
+Find
+\[
+\int\limits_{}^{} \frac{2}{\sqrt{x^2+2x}}dx \]
+\vspace{10in}
+
+** Completing the square
+
+** Examples
+Evaluate
+\[
+\int\limits_{}^{}\frac{dx}{\sqrt{1+9x^2}} \]
+\vspace{10in}
+
+** Examples

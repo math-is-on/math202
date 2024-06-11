@@ -1,0 +1,128 @@
+% Created 2024-03-26 Tue 10:50
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{21 March 2024}
+\title{The Other Improper Integral}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={The Other Improper Integral},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org220291f}
+\begin{frame}[label={sec:org156a6bc}]{Announcements}
+\begin{enumerate}
+\item Homework
+\item Corrections
+\item Office Hours
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:orgbc75d85}
+\begin{frame}[label={sec:org564bd1c}]{The other improper integral}
+Now let's examine a seemingly simple integral:
+\[
+\int\limits_{-1}^1 \frac{1}{x^2}\,dx\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org6c7ee70}]{The other improper integral}
+\end{frame}
+
+\begin{frame}[label={sec:org3f37e5c}]{The other improper integral}
+Clearly the issue is that we're trying to integrate a function that
+has a \uline{\hspace*{1in}} at \(x = 0\).  This gives rise to the second
+type of improper integral.
+\end{frame}
+
+\begin{frame}[label={sec:org547566b}]{The other improper integral}
+\begin{enumerate}
+\item Suppose \(f(x)\) is continuous on the interval \(\left[ a,b
+   \right)\), then \[ \int\limits_a^b f(x)\,dx = \hspace{2in}\]
+
+\item Suppose \(f(x)\) is continuous on the interval \(\left( a,b
+   \right]\), then \[ \int\limits_a^b f(x)\,dx= \hspace{2in}\]
+
+\item Suppose \(f(x)\) is continuous on the interval \(\left[ a,b
+   \right]\), except at the point \(x = c\), then \[ \int\limits_a^b f(x)\,dx =
+   \hspace{2in}\]
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:org8da119b}]{The other improper integral}
+Just like before, if the limits in the previous slide exist, we say
+the improper integral \uline{\hspace*{1in}} with the same value as the
+limit.  If the limit fails to exists, we say the improper integral
+\uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org2bfd86c}]{Example}
+Does the improper integral
+\[
+\int\limits_0^1 \frac{1}{\sqrt{x}}dx
+\]
+converge or diverge?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org8494bd2}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org928cb35}]{Example}
+Let's take a look at the example
+\[
+\int\limits_{-1}^1 \frac{1}{x^2}\,dx
+\]
+one more time.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf347576}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org31ffc86}]{Example}
+What is the value of \(a\) that gives
+
+\[
+\int\limits_0^1 \frac{1}{x^a}\,dx = 2.5?\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org777bece}]{Example}
+\end{frame}
+\end{document}

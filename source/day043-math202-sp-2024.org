@@ -1,0 +1,112 @@
+#+title: Properties of Power Series
+#+author: Chase Mathison
+#+date: 24 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath.
+2. Exam next Wednesday.
+3. Office hours, 10am - 11am.
+
+* Warm up problem
+** Warm up problem
+What is the limit of the following recursively defined sequence?
+\[
+x_{n+1}  = x_n - 1 + 2e^{-x_n}, x_0 = 1.\]
+\vspace{10in}
+
+* Properties of power series
+** Properties of Power Series
+:PROPERTIES:
+:CUSTOM_ID: sec:org193dfd6
+:END:
+
+To find power series representations of other functions,
+it's going to be convenient to combine power series that we already know
+
+#+begin_center
+[[../img/combiningPowSer.png]]
+#+end_center
+
+** Example
+Find a power series representation centered at 0 for the function
+\[f(x) = \frac{x}{1 + x^2}.\]
+\vspace{10in}
+
+** Example
+
+** Example
+Use the geometric series to find a power series centered at \(a = 2\)
+for the function \[\frac{1}{\left( x-1 \right)\left( x-3 \right)}\]
+
+\vspace{10in}
+
+** Example
+
+** Differentiation and integration of power series
+
+#+begin_center
+[[../img/tbyt.png]]
+#+end_center
+
+** Differentiation and integration of power series
+Note that this theorem says \(f(x)\) and \(f'(x)\) have the same
+radius of convergence, but does NOT tell us if they have the same
+endpoint behavior. The same goes for integrals.
+
+** Example
+Find a power series representation centered at 0 for
+
+1. \(\frac{2x}{1-x^2}\)
+
+2. \(\ln(1+x)\)
+
+3. \(\arctan(x)\)
+   \vspace{10in}
+
+** Uniqueness
+One last point to note is that power series representations
+are _\hspace*{1in}_.
+
+#+begin_center
+[[../img/unique1.png]]
+
+[[../img/unique2.png]]
+
+#+end_center
+
+/Proof:/
+\vspace{10in}
+
+** Example
+[[../img/prob1.png]]
+
+\vspace{10in}
+
+   

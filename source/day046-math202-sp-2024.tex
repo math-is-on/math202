@@ -1,0 +1,126 @@
+% Created 2024-05-03 Fri 11:25
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{6 May 2024}
+\title{More Taylor Series!}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={More Taylor Series!},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgdad5ef1}
+\begin{frame}[label={sec:org0929c71}]{Announcements}
+\begin{enumerate}
+\item Exam corrections, due Friday
+\item New homework, due Friday
+\item Final Exam, Wednesday May 15, 8:00am - 10:30am.
+\item Office hours today are 12pm - 1pm.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org680b3ad}
+\begin{frame}[label={sec:orgd58c53e}]{A reminder of Taylor Series}
+Here's what we talked about last time!  Suppose \(f(x)\) is a function that
+has as many derivatives at the point \(a\) as we desire.  Then the \uline{\hspace*{1in}} for
+\(f\) centered at \(a\) is given by
+
+\vspace{1in}
+
+If \(a = 0\), we call the series the \uline{\hspace*{1in}} for \(f\).
+\end{frame}
+
+\begin{frame}[label={sec:org391bfb0}]{Example}
+Find the Maclaurin series for the function \(f(x) = e^x.\)  Also find the radius of convergence and interval of convergence.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3213743}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org63f7afd}]{Example}
+Find the Taylor series centered at \(a=1\) for the function \(f(x) =
+\ln \left( x \right)\). Also find the radius of convergence and interval of convergence.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org1f4785f}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org5066af6}]{Taylor Polynomials and the Remainder}
+The partial sums associated with a Taylor series is called a \uline{\hspace*{1in}}.
+
+\begin{definition}[Taylor Polynomial]
+If \(f\) has \(n\) derivatives at \(x = a\), then the \(n\)th Taylor Polynomial for \(f\) at \(a\)
+is
+\[
+p_n(x) = \hspace{2in}\]
+We also define the \(n\)th remainder as
+\[
+R_n(x) = \hspace{2in}\]
+\end{definition}
+\end{frame}
+
+\begin{frame}[label={sec:orgd96795b}]{Example}
+Find \(p_0(x),p_1(x),p_2(x),\) and \(p_3(x)\) at \(a = 0\) for the
+function \(f(x) = e^x.\)  Also write down the corresponding remainders.
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org1863cf2}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org88c8445}]{Example}
+Find \(p_2(x)\) at \(a = -1\) for the function \(f(x) = \sqrt{5+x}\). What is the correponding remainder?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3595968}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgcaff2a7}]{Another way to write the remainder term}
+Let's finish up by seeing another way to write the remainder term
+\(R_n(x)\) for a function \(f\) that has \(n+1\) derivatives at the
+point \(a\).
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3548e9d}]{Another way to write the remainder term}
+\end{frame}
+\end{document}

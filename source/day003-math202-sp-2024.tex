@@ -1,0 +1,170 @@
+% Created 2024-01-23 Tue 09:26
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{24 January 2024}
+\title{\(u-\)substitution}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={\(u-\)substitution},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgb3dc0ad}
+\begin{frame}[label={sec:org13bcc1c}]{Announcements}
+\begin{enumerate}
+\item Homework in MyOpenMath.
+\item Office hours cancelled today.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:orgfd8fe94}
+\begin{frame}[label={sec:orgc34ff36}]{\(u-\)substitution: a closer look}
+Sometimes it is ``obvious'' that we need to use a \(u-\) substitution
+when evaluating an integral, such as
+\[
+\int\limits_0^1 x \left( x^2-4 \right)^{10}\,dx \]
+
+For this integral, it's pretty clear that if we make the \(u-\)substitution
+\begin{align*}
+u = & x^2-4 \\
+\frac{1}{2}du = & x\,dx
+\end{align*}
+\end{frame}
+
+\begin{frame}[label={sec:org39bddab}]{\(u-\)substitution: a closer look}
+Then, this integral transforms into
+\[
+\int\limits_{-4}^{-3} \frac{1}{2}u^{10}\,du \]
+which can be evaluated simply using the power rule:
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgd85df03}]{\(u-\)substitution: a closer look}
+\(u-\)substitutions can be used in other situations that
+aren't quite as obvious, or as a preliminary step to make an integral
+have a simpler form to use other techniques of integration.
+
+For instance, let's try to use \(u-\)substitution to evaluate
+\[
+\int\limits_{}^{} \frac{x}{\sqrt{x-1}}\,dx \]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org72437e2}]{\(u-\)substitution: a closer look}
+\end{frame}
+
+\begin{frame}[label={sec:org8d93611}]{\(u-\)substitution}
+Here is a general problem solving strategy for integrals involving
+\(u-\)substitution: 
+
+\begin{enumerate}
+\item Look at the integrand to determined if there is a composition of
+functions of the form \(f \left( g \left( x \right) \right)\).
+\item Substitute \(u = g \left( x \right)\) and \(du = g' \left( x
+   \right)\,dx\).
+\item If there are any \(x\)'s remaining in the integral after this
+substitution, replace them using \(u = g(x)\).
+\item Evaluate the integral in terms of \(u\), if possible.  If it is
+not possible, we might need to go back and change our \(u-\)substitution.
+\item Write your final answer in terms of \(x\) if finding an indefinite
+integral.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:org8409de6}]{Examples}
+Evaluate the following integral:
+\[
+\int\limits_{}^{} x \left( 1-x \right)^{99}\,dx \]
+\vspace{10in}
+\end{frame}
+
+
+\begin{frame}[label={sec:orga6f2c38}]{Examples}
+\end{frame}
+
+\begin{frame}[label={sec:org5894ac5}]{Examples}
+Evaluate the following integral:
+\[
+\int\limits_{-1}^{1}t \left( 1-t^2 \right)^{10}\,dt \]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org12994b9}]{Examples}
+\end{frame}
+
+\begin{frame}[label={sec:org06aa1a3}]{Examples}
+Evaluate the following integral:
+\[
+\int\limits_{}^{}x \sqrt{x+1}\,dx \]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgaf53421}]{Examples}
+\end{frame}
+
+\begin{frame}[label={sec:orgf53df1a}]{Examples}
+Evaluate the following integral:
+\[
+\int \cos^3 \left(  \theta \right) \sin \left( \theta \right)\,d\theta
+\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org576e128}]{Examples}
+\end{frame}
+
+\begin{frame}[label={sec:orgb6a885f}]{Examples}
+Evaluate the following integral:
+\[
+\int\limits_0^{\pi/2} \cos^3 \left( \theta \right)\,d\theta \]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orga6d6867}]{Examples}
+\end{frame}
+
+\begin{frame}[label={sec:org4ec73ac}]{Examples}
+Evaluate the following integral:
+\[
+\int\limits_{}^{} t \sin \left( t^2 \right)\cos \left( t^2 \right)\,dt
+\]
+\vspace{10in}
+\end{frame}
+\end{document}

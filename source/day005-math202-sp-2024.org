@@ -1,0 +1,121 @@
+#+title: Area between curves
+#+author: Chase Mathison
+#+date: 29 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+beamer_frame_level: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+
+* Announcements
+** Announcements
+1. Homework due tonight! in MyOpenMath!
+2. Quiz on Friday.
+3. Office hours: M - F, 10am - 11am.
+
+* The lecture
+** Area between curves
+We know that we arrived at the definition of the definite integral by
+considering the area under the curve given by \(y = f(x) \).  
+We can use the definite integral to find more general areas.  For instance,
+we can find the area bounded by the two curves
+\[ y = x,\quad \text{ and } \quad y = x^2 \]
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.3\textwidth]{../img/day004-ex1.png}
+\end{center}
+#+END_EXPORT
+Let's see how!
+
+** Area between curves
+
+Assume for now that for \(a \le x \le b \) we have \(f(x) \ge g(x)
+\).  Then, to find the area between \(f(x) \) and \(g(x) \), let's
+look at a sketch of what's going on:
+
+\vspace{10in}
+
+** Area between curves
+
+** Area between curves
+
+The previous slides showed that if \(f(x) \ge g(x) \) for \(a \le x
+\le b \), then the area between \(f(x) \) and \(g(x) \) is given by:
+\vspace{10in}
+
+** Example
+Find the area bounded by the graphs of the functions
+\(f(x) = x \) and \(g(x) = x^4 \).
+\vspace{10in}
+
+** Example
+
+** Example
+Let \(n > 0 \).  Find the area bounded by the graphs of the functions
+\(f(x) = x \) and \(g (x) = x^n \) with \(x \ge 0 \).  What is the limit of this area as
+\(n \rightarrow \infty \)?
+\vspace{10in}
+
+** Example
+
+** When the curves switch
+We've only considered so far the area between two curves where one
+function is always greater than the other function, but what about if
+we want to find the area between two curves where the "top curve"
+switches?  Well, that's simply given by
+\[
+\int\limits_a^b \left| f(x) - g(x) \right|\,dx \]
+
+** Example
+Find the area between the curves
+\[
+f \left( x \right) = \sin \left( 2x \right) \quad \text{ and } \quad g
+\left( x \right) = \cos \left( x \right)\]
+between \(x = 0 \) and \(x = \pi/2 \).
+
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.4\textwidth]{../img/day004-ex2.png}
+\end{center}
+#+END_EXPORT 
+
+** Example
+
+** A different example
+Let's consider finding the area bounded by the curves given by the
+functions
+\[
+f(x) = x^2, \quad g(x) = 2 - x, \quad h(x) = 0 \]
+for \( 0 \le x \le 2 \).
+#+BEGIN_EXPORT latex 
+\begin{center}
+\includegraphics[width=0.4\textwidth]{../img/day004-ex3.png}
+\end{center}
+#+END_EXPORT
+
+** A different example
+
+** Parting word
+
+We'll see a simpler way to tackle that last example in the next class.
+
+Don't forget about homework!

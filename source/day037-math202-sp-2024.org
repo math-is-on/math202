@@ -1,0 +1,115 @@
+#+title: The Integral Test
+#+author: Chase Mathison
+#+date: 10 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpEnMaTh.
+2. Office hours, 10am - 11am.
+   
+* Lecture
+** The Integral Test
+Let's look at another test that will bring back improper integrals!  Let's look at 2 specific examples to illustrate the _\hspace*{1in}_.
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n}\qquad \text{and} \quad \sum\limits_{n=1}^{\infty} \frac{1}{n^2}\]
+\vspace{10in}
+
+** The Integral Test
+
+** The Integral Test
+
+** The Integral Test
+
+What we just did works in general, as long as the series in question satisfies a few conditions.
+
+*** The Integral Test                                           :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) is a series with *strictly* _\hspace*{1in}_ *terms*.  If there is a continuous function
+\(f(x)\) and an integer \(N\) such that
+1. \(f\) is a decreasing function, and
+2. \(f(n) = a_n\) for all \(n \ge N\),
+
+Then
+\[
+\sum\limits_{n=1}^{\infty} a_n \quad \text{and} \quad \int\limits_N^{\infty} f(x)\,dx\]
+_\hspace*{3in}_.
+
+** Example
+Determine which of the following series converge by using the integral test:
+1. \[\sum\limits_{n=1}^{\infty} \frac{1}{n^2}\]
+2. \[\sum\limits_{n=2}^{\infty} \frac{1}{n\ln(n)}\]
+3. \[\sum\limits_{n=1}^{\infty} \frac{1}{n^2 + n}\]
+\vspace{10in}
+
+** Example
+
+** \(p-\)series
+Show that
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n^p}\]
+converges if \( p > 1\) and diverges if \(p \le 1.\)
+\vspace{10in}
+
+** \(p-\)series
+
+** Another use for the integral test
+In general if \(a_n = f(n)\) for a continuous, decreasing function,
+and \(\sum\limits_{n=1}^{\infty} a_n\) converges, it is *NOT* the case
+that \[ \sum\limits_{n=1}^{\infty} a_n = \int\limits_1^{\infty}
+f(x)\,dx\] But, we can still gain information about the value of the
+series from the value of the improper integral.  Let's see how:
+\vspace{10in}
+
+** Another use for the integral test
+
+** Integral test remainder estimate
+We've shown the following:
+
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) is a convergent series that satisfies
+the criteria for use with the integral test (with corresponding function \(f\)).
+
+Let \(S_N\) denote the partial sum \(\sum\limits_{n=1}^N a_n\). Then
+\[
+S_N + \int\limits_{N+1}^{\infty} f(x)\,dx < \sum\limits_{n=1}^{\infty}a_n < S_N + \int\limits_N^{\infty} f(x)\,dx. \]
+If we denote \(R_N = \sum\limits_{n=1}^{\infty} a_n - S_N\) (called the _\hspace*{1in}_), then another way to say this is
+\[
+\int\limits_{N+1}^{\infty} f(x)\,dx < R_N < \int\limits_N^{\infty} f(x)\,dx.\]
+
+** Example
+It can be shown that
+\[
+\sum\limits_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}.\]
+How many terms do we need to use in a partial sum to estimate this series
+with a remainder (error) of \(10^{-3}\)?
+\vspace{10in}
+
+** Example

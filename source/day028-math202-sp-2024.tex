@@ -1,0 +1,213 @@
+% Created 2024-03-18 Mon 12:09
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\usepackage{tikz}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{19 March 2024}
+\title{Mass and Moments}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Mass and Moments},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orge0dfb24}
+\begin{frame}[label={sec:org1be8bd4}]{Announcements}
+\begin{enumerate}
+\item Exam next Monday.
+\item Office hours, 10am - 11am.
+\end{enumerate}
+\end{frame}
+
+\section{Mass}
+\label{sec:orgb7507e5}
+\begin{frame}[label={sec:orgee8ac2e}]{Center of mass and moment of masses on a line}
+We'll start with masses on a line.  If we have 2 (not necessarily
+equal) masses on a line (think of a see-saw) then what would be the
+point where we could perfectly balance that line?  This is called the
+\uline{\hspace*{1in}}. Let's find this: 
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgb0eea70}]{Center of mass}
+In general, if we have \(n\) point masses at \(n\) points, we have the
+following:
+\begin{theorem}[Center of mass]
+If \(m_1, m_2,\ldots m_n\) are masses at the points \(x_1,x_2,\ldots, x_n\) respectively, then we have the center of mass
+\[
+\bar{x} = \hspace{2in}\]
+
+The value \(M = m_1x_1 + m_2x_2\) is called the \uline{\hspace*{1in}} of the system.
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:org1b81698}]{Example}
+Find the center of mass and the moment of the system with respect to
+the origin for the system of masses:
+\begin{align*}
+m_1 = 2 kg \text{ at } x_1 = 0.2 m, \,\,& m_2 = 3 kg \text{ at } x_2 = 1 m, \\
+m_3 = 7 kg \text{ at } x_3 = -0.5 m, \,\,& m_4 = 3.5 kg \text{ at } x_4 = -0.75 m
+\end{align*}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org80b9bab}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgcfe5098}]{Center of mass and moments of system in the plane}
+We can generalize the previous ideas to masses in the \(xy-\)plane.
+Let's do this for 2 masses:
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgbf89fb1}]{Center of mass and moments of system in the plane}
+Again, we can generalize this to \(n\) masses in the plane at \(n\)
+points:
+\begin{theorem}[Center of mass and moments in the plane]
+If \(m_1,m_2,\ldots,m_n\) are point masses at the points \(\left(
+x_1,y_1 \right), \left( x_2,y_2 \right),\ldots \left( x_n,y_n
+\right)\) respectively, then we define the quantities
+\[
+M_x = \hspace{2in}\]
+\[
+M_y = \hspace{2in}\]
+\[
+\bar{x} = \hspace{2in}\]
+\[
+\bar{y} = \hspace{2in}\]
+\end{theorem}
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgcfbc57f}]{Example}
+Find the moments \(M_x,M_y\) and the center of mass of
+the system of masses:
+\begin{align*}
+m_1 = 2 kg,& \text{ at } \left( -1,3 \right) \\
+m_2 = 6 kg,& \text{ at } \left( 1,1 \right) \\
+m_3 = 4 kg,& \text{ at } \left( 2,-2 \right)
+\end{align*}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orga4b23c0}]{Center of mass of a thin sheet}
+But what if we want to find the center of mass (or \alert{centroid}, which
+is the geometric center of an object) of a 2 dimensional
+object, like a thin plate or some other thin object defined by a
+function?
+
+For what follows, we're going to find the moments about the \(x\) and
+\(y\) axis and the center of mass for what's called a \emph{lamina}, which
+is a thin sheet of uniform density \(\rho\) represented as a region
+in the \(xy-\)plane. 
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org0be95b2}]{Center of mass of a thin sheet}
+Can you guess what we're about to do?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgaec5de9}]{Center of mass of a thin sheet}
+\end{frame}
+
+\begin{frame}[label={sec:org6551e07}]{Center of mass of a thin sheet}
+\begin{theorem}[Center of mass of a thin sheet]
+Suppose \(R\) is the region bounded above by the continous function
+\(y = f(x)\), below by \(y = 0\) and on the left and right by \(x =
+a\) and \(x = b\) respectively. Let \(\rho\) (rho) denote the density of the associated lamina.  Then we have the following:
+
+\begin{enumerate}
+\item \(m = \hspace{2in}\)
+\item \[M_x = \hspace{2in}\] and \[M_y = \hspace{2in}\]
+\item \[\bar{x} = \hspace{2in}\] and \[\bar{y} = \hspace{2in}\]
+\end{enumerate}
+\end{theorem}
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org00a1ff9}]{Example}
+Let \(R\) be the region bounded by the curve \(y=\sqrt{x}\), the
+\(x-\)axis and \(x=4\).  This region has a constant density of \(2\)kg/m\(^2\) where \(x\) is measured in meters.  Find the center of mass of
+this region (lamina).  What is the centroid?
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orga1e1c79}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org5a99fa1}]{More general lamina}
+Let's look at what happens if the lamina we are examining is defined
+by an upper curve \(y = f(x)\) and a lower curve \(y = g(x),\) again
+with a constant density \(\rho\) which has units of mass per
+length\(^2\).
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgd8f6273}]{More general lamina}
+In general, assume \(R\) is the region bounded above by the graph of
+\(y = f(x)\), below by the graph of \(y = g(x)\) and on the left and
+right by \(x = a\) and \(x = b\) respectively.  Also, suppose that the density of the associated lamina is the constant \(\rho.\) Then:
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3da8c46}]{Example}
+Find the center of mass of the region bounded by the curves
+\(y = 1-x^2\) and \(y = x\), with a constant density of \(\rho=1\)kg/m\textsuperscript{2} where \(x\) is in m.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf0b9ee9}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org9f7b6f9}]{Example (The symmetry principal)}
+Find the center of mass of the region bounded by the curves \(y =
+x^2-1\) and \(\sqrt{1-x^2}\), with constant density of \(\rho=3\)kg/m\textsuperscript{2} where \(x\) is in m.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org05ec2b9}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org291dc6c}]{One more example}
+Find the center of mass of the region bounded by the curve \(y =
+\cos(x)\) and the \(x-\)axis between \(x=-\pi/2\) and \(x=\pi/2\),
+where the lamina has a constant density of \(1\)kg/m\(^2\) where \(x\) is in meters.
+\vspace{10in}
+\end{frame}
+\end{document}

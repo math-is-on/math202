@@ -1,0 +1,109 @@
+% Created 2024-03-06 Wed 11:15
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{7 March 2024}
+\title{Other Methods of Integration}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Other Methods of Integration},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org3c07039}
+\begin{frame}[label={sec:org14f7044}]{Announcements}
+\begin{enumerate}
+\item Homework in MyOpenMath
+\item Office hours tomorrow via Zoom.
+\item Partial fractions quiz in Canvas (due Friday).
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org890d77b}
+\begin{frame}[label={sec:orgbb2aeb5}]{Other ``Methods'' of Integration}
+So we've discussed all of the methods that I expect you to be able
+to use on an exam.
+
+But let's say you just don't want to use these methods, but you have
+a \uline{\hspace*{2in}} at your disposal.  Then a lot of the time, all we'll need
+is a \uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org7e7e226}]{Example}
+Suppose that you know from a table of integrals (see the back of your
+book) that
+\[ \int\limits_{}^{} \sqrt{2ax - x^2}\,dx = \frac{x-a}{2}
+\sqrt{2ax - x^2} + \frac{a^2}{2} \cos^{-1} \left( \frac{a-x}{a}
+\right) + C \]
+Use this to evaluate
+
+\[
+\int\limits_{}^{} e^x\sqrt{2e^x - e^{2x}}\,dx
+\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org303e337}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orga886d86}]{Example}
+Use the table of integrals in the back of your book to evaluate
+\[
+\int\limits_{}^{} \frac{x}{2 + x}\,dx
+\]
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org6482b38}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgbb84b7b}]{Example}
+Use the fact that
+\[ \int\limits_{}^{} \left( ae^{ax}\ln \left( x + b
+\right) + \frac{e^{ax}}{x+b} \right)\,dx = e^{ax}\ln \left( x+b
+\right)+C\]
+to evaluate
+
+\[ \int\limits_{}^{} \left( \ln \left( \ln(x) + 1 \right) +
+\frac{1}{\ln(x)+1} \right)\,dx\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgf9b6056}]{Example}
+\end{frame}
+\end{document}

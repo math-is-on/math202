@@ -1,0 +1,115 @@
+#+title: Integration by Parts, Part I
+#+author: Chase Mathison
+#+date: 20 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \usepackage{tikz}
+* Announcements
+** Announcements
+1. Homework in MyOpenMath.
+2. Exams will be given back to you tomorrow.
+3. Office hours, 10am - 11am.
+
+* The lecture
+** Shifting gears
+Today begins our study of new techniques of integration.  After
+today's class, you be able to integrate something that looks like
+\[
+\int\limits_{}^{} xe^x\,dx \]
+which currently we don't know how to handle.
+
+The secret to integrating this and many other functions lies in a
+technique called _\hspace{1in}_.  
+Integration by parts is the integration rule that corresponds to the
+product rule for differentiation, so let's remind ourselves of the
+product rule. 
+
+** The product rule
+If \(f \left( x \right) \) and \(g \left( x \right) \) are
+differentiable functions, then so is \(f \left( x \right)g \left( x
+\right) \) and
+\[
+\hspace{1in} \]
+
+If we integrate both sides of this, we get:
+\[
+\hspace{1in}\]
+Rearranging this, we have one way of writing the integration by parts
+formula:
+\[
+\hspace{1in}\]
+
+** The product rule
+The way this is usually written is as follows:
+\[
+\hspace{1in} \]
+Matching corresponding pieces with the slide before, we have
+\[
+\hspace{1in}\]
+with
+\[
+\hspace{1in} \]
+This is not a _\hspace{1in}_.
+
+This is simply a quick way to write out integration by parts.
+
+** Example
+Find
+\[
+\int\limits_{}^{} xe^x\,dx \]
+\vspace{10in}
+
+** Example
+
+** How do I pick \(u \) and \(dv \)?
+A very natural question comes up when learning integration by parts:
+Which function should we make \(u \) and which one we should make \(dv
+\)?
+
+Some books teach the following acronym: LIATE.
+
+How do we use this acronym?  When you're deciding which function to
+make \(u \), you're going to choose the function that appears furthest
+to the left in the acronym:
+- L :: 
+- I ::
+- A :: 
+- T ::
+- E :: 
+
+** Example
+Find
+\[
+\int\limits_{}^{} \ln (x)\,dx \]
+\vspace{10in}
+
+** Example
+
+** Example 
+Find
+\[
+\int\limits_{}^{} x^2 \sin \left( x \right)\,dx \]
+\vspace{10in}
+
+** Example

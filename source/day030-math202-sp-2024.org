@@ -1,0 +1,93 @@
+#+title: The Other Improper Integral
+#+author: Chase Mathison
+#+date: 21 March 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework
+2. Corrections
+3. Office Hours
+
+* Lecture
+** The other improper integral
+Now let's examine a seemingly simple integral:
+\[
+\int\limits_{-1}^1 \frac{1}{x^2}\,dx\]
+\vspace{10in}
+
+** The other improper integral
+
+** The other improper integral
+Clearly the issue is that we're trying to integrate a function that
+has a _\hspace*{1in}_ at \(x = 0\).  This gives rise to the second
+type of improper integral.
+
+** The other improper integral
+1. Suppose \(f(x)\) is continuous on the interval \( \left[ a,b
+   \right)\), then \[ \int\limits_a^b f(x)\,dx = \hspace{2in}\]
+
+2. Suppose \(f(x)\) is continuous on the interval \( \left( a,b
+   \right]\), then \[ \int\limits_a^b f(x)\,dx= \hspace{2in}\]
+
+3. Suppose \(f(x)\) is continuous on the interval \( \left[ a,b
+   \right]\), except at the point \(x = c\), then \[ \int\limits_a^b f(x)\,dx =
+   \hspace{2in}\]
+
+** The other improper integral
+Just like before, if the limits in the previous slide exist, we say
+the improper integral _\hspace*{1in}_ with the same value as the
+limit.  If the limit fails to exists, we say the improper integral
+_\hspace*{1in}_.
+
+** Example
+Does the improper integral
+\[
+\int\limits_0^1 \frac{1}{\sqrt{x}}dx
+\]
+converge or diverge?
+\vspace{10in}
+
+** Example
+
+** Example
+Let's take a look at the example
+\[
+\int\limits_{-1}^1 \frac{1}{x^2}\,dx
+\]
+one more time.
+\vspace{10in}
+
+** Example
+
+** Example
+What is the value of \(a\) that gives
+
+\[
+\int\limits_0^1 \frac{1}{x^a}\,dx = 2.5?\]
+\vspace{10in}
+
+** Example

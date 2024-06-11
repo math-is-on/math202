@@ -1,0 +1,129 @@
+% Created 2024-03-28 Thu 14:15
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{1 April 2024}
+\title{Sequences}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Sequences},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgf89c34f}
+\begin{frame}[label={sec:org5ee81af}]{Announcements}
+\begin{enumerate}
+\item Homework due tonight.
+\item Homework/Project in Canvas.
+\item Exam corrections due Tuesday.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:orge8fc7bd}
+\begin{frame}[label={sec:org948a8cc}]{Sequences}
+\begin{definition}[Infinite Sequence]
+A \uline{\hspace*{1in}} \(\left\{ a_n \right\}\)is an \uline{\hspace*{1in}} of numbers of
+the form
+\[
+\hspace{1in}\]
+The subscript \(n\) is called the \uline{\hspace*{1in}} and usually (but not always) begins
+at \(n = \hspace{1in}\). Each number \(a_n\) is called a \uline{\hspace*{1in}} in the sequence.
+\end{definition}
+\end{frame}
+
+\begin{frame}[label={sec:orgac073c5}]{Example}
+Write out the first 4 terms in the following examples of sequences:
+\begin{enumerate}
+\item \(a_n = \frac{1}{n}\) with \(n \ge 1\) (Explicit formula).
+\item \(b_{n+2} = b_{n+1} + b_{n}\) with \(n \ge 0\) and \(b_0 = 1\) and \(b_1 = 1\). (Recurrence Relation)
+\item \(c_n = \frac{1}{2^n}\), \(n \ge 3\)
+\item \(d_n = d_{n-1} + 5\), with \(n \ge 1\), \(d_1 = 2\) (Arithmetic)
+\item \(e_{n+1} = \frac{1}{3}e_n\), with \(n \ge 0\), \(e_0 = 2\) (Geometric)
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org3cc7a04}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org067ddd2}]{Example}
+Find an explicit formula for the sequences
+\begin{enumerate}
+\item \[\frac{1}{3}, \frac{1}{2}, \frac{3}{5}, \frac{2}{3}, \frac{5}{7}, \frac{3}{4},\ldots\]
+\item \[4,5,7,11,19,35,\ldots\]
+\end{enumerate}
+\vspace{10in}   
+\end{frame}
+
+\begin{frame}[label={sec:org70bf242}]{The Limit of a Sequence}
+We'll be interested in what happens to a sequence as \(n \rightarrow
+\infty.\) If a sequence ``settles down'' to 1 number as \(n \rightarrow
+\infty\), then we'll call that number the \uline{\hspace*{1in}} of the sequence.
+
+\begin{definition}[Limit of a sequence]
+If \(\left\{ a_n \right\}_{n=n_0}^{\infty}\) is a sequence of real
+numbers, we call \(L\) the \alert{limit} of the sequence \(\left\{ a_n
+\right\}_{n=n_0}^{\infty}\) if, given \(\epsilon > 0\) there is some integer \(N\) such that if \(n \ge N\), then
+\[
+\left| a_n - L \right| < \epsilon.\]
+
+If the sequence \(\left\{ a_n \right\}_{n=n_0}^{\infty}\) has a limit \(L\), then we write
+\[
+\lim_{n\rightarrow\infty} a_n = L\]
+and also say that the sequence \alert{converges} to the limit \(L\).
+\end{definition}
+\end{frame}
+
+
+\begin{frame}[label={sec:org1d125e1}]{Example}
+Show, using the definition of the limit of a sequence, that
+\[
+\lim_{n\rightarrow\infty} \frac{1}{2^n} = 0.\]
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgccd95f6}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org626af4b}]{Example}
+Show that the sequence \(b_n = \frac{n-1}{n}\) for \(n \ge 1\)
+converges to \(1\) using the definition of the limit of a sequence.
+
+\vspace{10in}
+\end{frame}
+\end{document}

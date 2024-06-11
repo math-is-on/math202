@@ -1,0 +1,120 @@
+% Created 2024-04-16 Tue 14:18
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{17 April 2024}
+\title{The Ratio and Root Tests}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={The Ratio and Root Tests},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:org64c7a17}
+\begin{frame}[label={sec:org2678b9d}]{Announcements}
+\begin{enumerate}
+\item Homework
+\item Office hours tomorrow: 10am - 11am
+\item Project
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:orgb15f005}
+\begin{frame}[label={sec:org158cc50}]{The Ratio Test}
+So now that we have 2 ideas of convergence (Conditional convergence
+and absolute), it would be nice to have tests that tell me when a
+series is absolutely convergent.  That's where the ratio test and the root test come into play.
+
+\begin{theorem}[The Ratio Test]
+Let \(\sum\limits_{n=1}^{\infty} a_n\) be a series with \(a_n \neq 0\) for infinitely
+many \(n\)'s, and let \(R = \lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right|.\)
+\begin{enumerate}
+\item If \(R < 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) \uline{\hspace*{2in}}.
+\item If \(R > 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) \uline{\hspace*{1in}}.
+\item If \(R = 1\), then the ratio test is \uline{\hspace*{1in}}.
+\end{enumerate}
+\end{theorem}
+
+\emph{Proof:}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org1e21338}]{Example}
+Discuss the convergence/divergence of
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} \frac{n^2}{n!}\)
+\item \(\sum\limits_{n=1}^{\infty} \frac{\ln(n)}{n}\)
+\item \(\sum\limits_{n=1}^{\infty} \frac{n!}{\left( 2n \right)!}\)
+\end{enumerate}
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org843e1d6}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgf4a6eb5}]{The Root Test}
+A similar test is the \uline{\hspace*{1in}}.
+
+\begin{block}{The Root Test}
+Let \(\sum\limits_{n=1}^{\infty}a_n\) be a series and let
+\[R = \lim_{n\rightarrow \infty} \sqrt[n]{\left| a_n \right|}.\]
+Then,
+\begin{enumerate}
+\item If \(R < 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) \uline{\hspace*{2in}}.
+\item If \(R > 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) \uline{\hspace*{1in}}.
+\item If \(R = 1\), then the root test is \uline{\hspace*{1in}}.
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}[label={sec:org4ea37a0}]{Example}
+Discuss the convergence/divergence of the following series:
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} \frac{2^n}{n^n}\)
+\item \(\sum\limits_{n=1}^{\infty} \frac{2^n}{n!}\)
+\item \(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n \frac{x^{2n+1}}{(2n+1)!}\)
+\vspace{10in}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:orga8edbd4}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org8dfd313}]{Example}
+\end{frame}
+\end{document}

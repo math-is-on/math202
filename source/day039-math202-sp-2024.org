@@ -1,0 +1,127 @@
+#+title: Alternating Series
+#+author: Chase Mathison
+#+date: 16 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in M.O.M.
+2. Office hours today 10am - 11am.
+3. New project in Canvas.
+   
+* Lecture
+** Alternating Series
+So far, the tests we've used only work on series with _\hspace*{1in}_ terms.
+
+But in real life, there are series that have both positive and negative terms.
+
+A special type of sequence of this sort is called an _\hspace*{1in}_.
+
+*** Alternating Series                                       :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+
+Any series whose terms alternate between positive and negative values is called
+an alternating series.  An alternating series can be written in the forms:
+\vspace{1in}
+
+** Example
+Which of the following are alternating series?
+1. \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n\)
+2. \(\sum\limits_{n=1}^{\infty} \left( \frac{2}{3} \right)^{n-1}\)
+3. \(\sum\limits_{n=1}^{\infty} \frac{\sin \left( \frac{(2n+1)\pi}{2} \right)}{n}\)
+   \vspace{10in}
+** Alternating series test
+To show how we can determine the convergence or divergence of an
+alternating series, let's look at a specific alternating series, the
+*alternating harmonic series*:
+\vspace{10in}
+** Alternating series test
+** Alternating series test
+
+*** The Alternating Series Test                                 :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+An alternating series of the form
+\[
+\sum\limits_{n=1}^{\infty} \left( -1 \right)^n b_n \text{ or } \sum\limits_{n=1}^{\infty} \left( -1 \right)^{n+1}b_n\]
+converges if:
+1. 
+2.
+
+** Example
+Which of the following series converge:
+1. \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n \frac{1}{n^2}\)
+2. \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^{n+1} \frac{1}{e^n}\)
+3. \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n \ln(n)\)
+   \vspace{10in}
+
+** The Remainder of an Alternating Series
+Let's see if we can get a bound on the remainder \(R_N =
+\sum\limits_{n=1}^{\infty} \left( -1 \right)^n b_n -
+\sum\limits_{n=1}^{N} \left( -1 \right)^n b_n\) if the series converges.
+\vspace{10in}
+
+** Example
+What is the remainder if we use \[ \sum\limits_{n=0}^5 \left( -1
+\right)^n \frac{1}{\left( 2n+1 \right)!}\] to approximate
+\(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n \frac{1}{\left( 2n+1
+\right)!}\)?  (This is \(\sin(1)\), by the way).
+\vspace{10in}
+
+** Absolute vs Conditional Convergence
+
+We've shown now that \(\sum\limits_{n=1}^{\infty} \frac{\left( -1 \right)^{n+1}}{n}\) converges,
+but we also know that
+\[
+\sum\limits_{n=1}^{\infty} \left| \frac{\left( -1 \right)^{n+1}}{n} \right| = \sum\limits_{n=1}^{\infty} \frac{1}{n}\]
+*diverges* (why)?
+
+A series \(\sum\limits_{n=1}^{\infty} a_n\) that converges, but for which
+\(\sum\limits_{n=1}^{\infty} \left| a_n \right| \) diverges is called
+_\hspace*{1in}_.
+
+A series \(\sum\limits_{n=1}^{\infty} a_n\) that converges, and for which
+\(\sum\limits_{n=1}^{\infty} \left| a_n \right|\) converges is called
+_\hspace*{1in}_.
+
+** Example
+Is the series
+\[
+\sum\limits_{n=1}^{\infty} \left( \frac{-1}{4} \right)^n\]
+conditionally convergent, absolutely convergent, or divergent?
+\vspace{1in}
+
+** A useful theorem
+A fact that is useful is that if \(\sum\limits_{n=1}^{\infty} a_n\) is an absolutely
+convergent series, then the original series \(\sum\limits_{n=1}^{\infty} a_n\) is also
+convergent.
+\vspace{10in}

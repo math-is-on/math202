@@ -1,0 +1,159 @@
+% Created 2024-04-16 Tue 07:55
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{16 April 2024}
+\title{Alternating Series}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Alternating Series},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgf1c827c}
+\begin{frame}[label={sec:org1eadf8d}]{Announcements}
+\begin{enumerate}
+\item Homework in M.O.M.
+\item Office hours today 10am - 11am.
+\item New project in Canvas.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org3dd32c7}
+\begin{frame}[label={sec:orga7f09e0}]{Alternating Series}
+So far, the tests we've used only work on series with \uline{\hspace*{1in}} terms.
+
+But in real life, there are series that have both positive and negative terms.
+
+A special type of sequence of this sort is called an \uline{\hspace*{1in}}.
+
+\begin{definition}[Alternating Series]
+Any series whose terms alternate between positive and negative values is called
+an alternating series.  An alternating series can be written in the forms:
+\vspace{1in}
+\end{definition}
+\end{frame}
+
+\begin{frame}[label={sec:org9fbb0c7}]{Example}
+Which of the following are alternating series?
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n\)
+\item \(\sum\limits_{n=1}^{\infty} \left( \frac{2}{3} \right)^{n-1}\)
+\item \(\sum\limits_{n=1}^{\infty} \frac{\sin \left( \frac{(2n+1)\pi}{2} \right)}{n}\)
+\vspace{10in}
+\end{enumerate}
+\end{frame}
+\begin{frame}[label={sec:orgd2f90ed}]{Alternating series test}
+To show how we can determine the convergence or divergence of an
+alternating series, let's look at a specific alternating series, the
+\alert{alternating harmonic series}:
+\vspace{10in}
+\end{frame}
+\begin{frame}[label={sec:org604452a}]{Alternating series test}
+\end{frame}
+\begin{frame}[label={sec:org8f2f4f5}]{Alternating series test}
+\begin{theorem}[The Alternating Series Test]
+An alternating series of the form
+\[
+\sum\limits_{n=1}^{\infty} \left( -1 \right)^n b_n \text{ or } \sum\limits_{n=1}^{\infty} \left( -1 \right)^{n+1}b_n\]
+converges if:
+\begin{enumerate}
+\item 
+
+\item 
+\end{enumerate}
+\end{theorem}
+\end{frame}
+
+\begin{frame}[label={sec:org4418213}]{Example}
+Which of the following series converge:
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n \frac{1}{n^2}\)
+\item \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^{n+1} \frac{1}{e^n}\)
+\item \(\sum\limits_{n=1}^{\infty} \left( -1 \right)^n \ln(n)\)
+\vspace{10in}
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label={sec:orgfef8c6e}]{The Remainder of an Alternating Series}
+Let's see if we can get a bound on the remainder \(R_N =
+\sum\limits_{n=1}^{\infty} \left( -1 \right)^n b_n -
+\sum\limits_{n=1}^{N} \left( -1 \right)^n b_n\) if the series converges.
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org677b8c8}]{Example}
+What is the remainder if we use \[ \sum\limits_{n=0}^5 \left( -1
+\right)^n \frac{1}{\left( 2n+1 \right)!}\] to approximate
+\(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n \frac{1}{\left( 2n+1
+\right)!}\)?  (This is \(\sin(1)\), by the way).
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org2f43ec6}]{Absolute vs Conditional Convergence}
+We've shown now that \(\sum\limits_{n=1}^{\infty} \frac{\left( -1 \right)^{n+1}}{n}\) converges,
+but we also know that
+\[
+\sum\limits_{n=1}^{\infty} \left| \frac{\left( -1 \right)^{n+1}}{n} \right| = \sum\limits_{n=1}^{\infty} \frac{1}{n}\]
+\alert{diverges} (why)?
+
+A series \(\sum\limits_{n=1}^{\infty} a_n\) that converges, but for which
+\(\sum\limits_{n=1}^{\infty} \left| a_n \right|\) diverges is called
+\uline{\hspace*{1in}}.
+
+A series \(\sum\limits_{n=1}^{\infty} a_n\) that converges, and for which
+\(\sum\limits_{n=1}^{\infty} \left| a_n \right|\) converges is called
+\uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org9385a54}]{Example}
+Is the series
+\[
+\sum\limits_{n=1}^{\infty} \left( \frac{-1}{4} \right)^n\]
+conditionally convergent, absolutely convergent, or divergent?
+\vspace{1in}
+\end{frame}
+
+\begin{frame}[label={sec:org349afaf}]{A useful theorem}
+A fact that is useful is that if \(\sum\limits_{n=1}^{\infty} a_n\) is an absolutely
+convergent series, then the original series \(\sum\limits_{n=1}^{\infty} a_n\) is also
+convergent.
+\vspace{10in}
+\end{frame}
+\end{document}

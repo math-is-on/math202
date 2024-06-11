@@ -1,0 +1,129 @@
+% Created 2024-04-08 Mon 10:36
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{8 April 2024}
+\title{Infinite Series}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Infinite Series},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgbf3ff1c}
+\begin{frame}[label={sec:org74d12f0}]{Announcements}
+\begin{enumerate}
+\item Homework/project.
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org9303e8d}
+\begin{frame}[label={sec:org77232fa}]{Example}
+Let
+\[
+S_k = 1 + \frac{1}{2} + \ldots + \frac{1}{2^k}\]
+Let's try to find
+\begin{enumerate}
+\item A ``nicer'' way to write \(S_k\) and
+\item \(\lim_{k\rightarrow \infty} S_k\)
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:orgdcee242}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:org4663060}]{Last time}
+In the last example, we found the limit
+of a sequence defined by
+\[
+S_k = \sum\limits_{n=1}^k \left( \frac{1}{2} \right)^n\]
+
+When taking the limit of a sequence like this, it might make sense to write something
+like
+\[
+\sum\limits_{n=1}^{\infty} \left( \frac{1}{2} \right)^n\]
+
+Today we're going to start with things that look like
+\[
+\sum\limits_{n=1}^{\infty} a_n\]
+and try to define what this means.  The object above is called an \uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org1e359d1}]{Infinite Series Definition}
+An infinite series is an expression of the form
+\[
+\sum\limits_{n=1}^{\infty} a_n = a_1 + a_2 + a_3 + \ldots \]
+For each positive integer \(k\), the sum
+\[
+S_k = \sum\limits_{n=1}^k a_n\]
+is called the \uline{\hspace*{2in}} of the series.  These partial sums form a
+sequence \(\left\{ S_k \right\}\).  If the sequence of partial sums converges
+to a real number \(S\), we say the infinite series \uline{\hspace*{1in}} to \(S\) and write
+\[
+\sum\limits_{n=1}^{\infty} a_n = S.\]
+If the sequence of partial sums diverges, we say the infinite series \uline{\hspace*{1in}}.
+\end{frame}
+
+\begin{frame}[label={sec:org8b6fc5a}]{Example}
+Find the sequence of partial sums to evaluate the following series:
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} \left( \frac{1}{3} \right)^n\)
+\item \(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n\)
+\item \(\sum\limits_{n=1}^{\infty} \ln \left( \frac{n+1}{n} \right)\)
+\item \(\sum\limits_{n=1}^{\infty} \frac{1}{n^2+n}\)
+\end{enumerate}
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org740c6ff}]{Example}
+\end{frame}
+
+\begin{frame}[label={sec:orgbf5acec}]{Algebraic Properties of Series}
+Suppose \(\sum\limits_{n=1}^{\infty} a_n\) converges to \(A\) and
+\(\sum\limits_{n=1}^{\infty} b_n\) converges to \(B\), and \(c\) is a
+real number.  Then we have
+\begin{enumerate}
+\item \(\sum\limits_{n=1}^{\infty} a_n \pm b_n =\)
+\item \(\sum\limits_{n=1}^{\infty} c a_n =\)
+\end{enumerate}
+\vspace{10in}   
+\end{frame}
+
+\begin{frame}[label={sec:orgaa4dfb4}]{Example}
+\end{frame}
+\end{document}

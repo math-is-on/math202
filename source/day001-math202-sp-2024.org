@@ -1,0 +1,179 @@
+#+title: Syllabus day/Review of Calc I
+#+author: Chase Mathison
+#+date: 22 January 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+beamer_frame_level: 2
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+
+* Announcements
+** Announcements
+1. Welcome to Calc II!
+2. Syllabus quiz in Canvas.
+3. Homework assigned and due next Monday (mostly review).
+   
+* Syllabus overview
+** Syllabus
+Let us take 10 minutes to review Canvas and the syllabus!
+
+* Calc I Review
+** Review of Calc I (Derivatives)
+
+Remember that Calculus I (or most of Calculus I) is about finding the
+derivative, which is a generalization of the slope of a straight line.
+
+
+We're going to freely use all of the rules for finding derivatives
+that we developed last semester, including:
+
+
+1. The power rule: \( \frac{d}{dx} \left( x^a \right) =  \) 
+2. The sum/difference rule: \( \frac{d}{dx} \left( f(x) \pm g(x) \right)
+   = \) 
+3. The product rule: \( \frac{d}{dx} \left( f(x)g(x) \right) =
+   \) 
+4. The quotient rule: \( \frac{d}{dx} \left( \frac{f(x)}{g(x)} \right)
+   = \) 
+5. The chain rule: \(\frac{d}{dx} \left( f \left( g(x) \right) \right)
+   = \) 
+
+** Review of Calc I (Derivatives)
+
+We'll also freely use the derivatives of elementary functions we know:
+
+
+1. \(\frac{d}{dx} \sin (x) =  \) 
+2. \(\frac{d}{dx} \cos (x) =  \) 
+3. \(\frac{d}{dx} \tan (x) =  \) 
+4. \(\frac{d}{dx} e^x = \) 
+5. \(\frac{d}{dx} a^x =  \) 
+6. \(\frac{d}{dx} \ln(x) = \)
+
+** Reminder of the definition
+
+Given a function \(f(x) \) that is defined on an open interval
+containing the point \(a \), we say \(f \) is differentiable at \(a \)
+if
+
+\[
+\lim_{h\rightarrow 0}\hspace{2in} \]
+exists. 
+
+We call \(f'(a) \) the above limit.  If \(f \) is
+differentiable at every point in an interval, we say \(f \) is
+differentiable on the interval.
+
+** Review problem
+
+Find the derivatives of the following functions:
+1. \(f \left( x \right) = x^2 + 2^x \)
+2. \(g \left( x \right) = e^{x^2} \)
+3. \(h \left( x \right) = \frac{x^2-4}{3+2x^2} \)
+\vspace{10in}
+
+** Review problem
+
+** Review problem
+A farmer finds that if she plants 30 trees per acre, each tree will
+yield 60 bushels of fruit. She estimates that for each additional tree
+planted per acre, the yield of each tree will decrease by 3
+bushels. How many trees should she plant per acre to maximize her
+harvest?
+\vspace{10in}
+
+** Review problem
+
+** Review of Calc I (Integrals)
+
+Recall the definition of the definite integral:
+
+\[
+\int\limits_a^b f(x)\,dx = \lim_{n\rightarrow \infty}
+\sum\limits_{k=1}^n f(x_k) \Delta x \]
+where \(x_k = x_{0} + k\Delta x \), \(x_0 = a \), \(x_n = b \) and \(\Delta
+x = (b-a)/n\).
+
+
+The definite integral \(\int\limits_a^b f \left( x \right)\,dx \) is
+simply the signed area under the curve defined by \(y = f \left( x
+\right). \)
+
+** Special note!
+The definition of the definite integral is actually more general than
+what we've presented.  Really, we can define:
+\[
+\int\limits_a^b f(x)\,dx = \lim_{n\rightarrow \infty}
+\sum\limits_{k=1}^n f(x^{*}_k) \Delta x \]
+where \(x_k = x_{0} + k\Delta x \), \(x_0 = a \), \(x_n = b \) and \(\Delta
+x = (b-a)/n\), and \(x_k^{*} \) is /any/ point in \( \left[ x_{k-1},x_k \right] \).
+\vspace{10in}
+
+** Review of Calc I (Integrals)
+We will make some use the definition of the definite integral, but
+more often we will use the Fundamental theorem of Calculus:
+
+\[
+\int\limits_a^b f(x)\,dx = F(b) - F(a) \]
+where \(F(x) \) is an antiderivative of \(f(x) \) on the interval
+\(\left[ a,b \right] \), which means \(F'(x) = f(x) \) for each \(x \)
+in \( \left[ a,b \right] \). If \(F'(x) = f(x) \) for all \(x \) in an
+interval, we write
+\[
+\int f(x)\,dx = F(x) + C \]
+
+** Integration rules
+
+Much of this semester is going to be about finding new and better ways
+to take antiderivatives to use in the fundamental theorem of calculus,
+but here are a few basic rules to get us started:
+
+1. \( \int x^n\,dx =  \)
+2. \( \int f(x) \pm g(x)\,dx =  \)
+3. \( \int c f(x)\,dx =  \) 
+4. \( \int f(g(x))g'(x)\,dx =  \)
+   
+where \(F(x) \) is an antiderivative of \(f(x) \).
+
+** Integration example
+
+Find
+\[
+\int\limits_0^3 \frac{x}{\sqrt{16+x^2}}\,dx \]
+#+BEGIN_EXPORT latex 
+\includegraphics[width=0.5\textwidth]{../img/day001-ex2.png}
+#+END_EXPORT
+
+** Integration example
+
+** Integration example
+Find 
+\[\int\limits_0^4 \sqrt{16-x^2}\,dx \]
+\vspace{10in}
+
+** Integration example
+
+** Integration example
+Evaluate
+\[
+\int\limits_{-1}^1 4xe^{-10x^2}\,dx \]
+\vspace{10in}

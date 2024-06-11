@@ -1,0 +1,91 @@
+#+title: The Ratio and Root Tests
+#+author: Chase Mathison
+#+date: 17 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework
+2. Office hours tomorrow: 10am - 11am
+3. Project
+
+* Lecture
+** The Ratio Test
+So now that we have 2 ideas of convergence (Conditional convergence
+and absolute), it would be nice to have tests that tell me when a
+series is absolutely convergent.  That's where the ratio test and the root test come into play.
+
+*** The Ratio Test                                              :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+Let \(\sum\limits_{n=1}^{\infty} a_n\) be a series with \(a_n \neq 0\) for infinitely
+many \(n\)'s, and let \(R = \lim_{n\rightarrow \infty} \left| \frac{a_{n+1}}{a_n} \right|.\)
+1. If \(R < 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) _\hspace*{2in}_.
+2. If \(R > 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) _\hspace*{1in}_.
+3. If \(R = 1\), then the ratio test is _\hspace*{1in}_.
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+/Proof:/
+\vspace{10in}
+
+** Example
+Discuss the convergence/divergence of
+1. \( \sum\limits_{n=1}^{\infty} \frac{n^2}{n!}\)
+2. \( \sum\limits_{n=1}^{\infty} \frac{\ln(n)}{n}\)
+3. \( \sum\limits_{n=1}^{\infty} \frac{n!}{\left( 2n \right)!}\)
+
+\vspace{10in}
+
+** Example
+
+** The Root Test
+
+A similar test is the _\hspace*{1in}_.
+
+*** The Root Test
+
+Let \(\sum\limits_{n=1}^{\infty}a_n\) be a series and let
+\[R = \lim_{n\rightarrow \infty} \sqrt[n]{\left| a_n \right|}.\]
+Then,
+1. If \(R < 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) _\hspace*{2in}_.
+2. If \(R > 1\), then \(\sum\limits_{n=1}^{\infty} a_n\) _\hspace*{1in}_.
+3. If \(R = 1\), then the root test is _\hspace*{1in}_.
+
+** Example
+Discuss the convergence/divergence of the following series:
+1. \(\sum\limits_{n=1}^{\infty} \frac{2^n}{n^n}\)
+2. \(\sum\limits_{n=1}^{\infty} \frac{2^n}{n!}\)
+3. \(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n \frac{x^{2n+1}}{(2n+1)!}\)
+   \vspace{10in}
+
+** Example
+
+** Example

@@ -1,0 +1,81 @@
+#+title: Volumes by Slicing
+#+author: Chase Mathison
+#+date: 1 February 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Homework in MyOpenMath.
+2. Quiz in Canvas.
+3. Office hours: 10am - 11am.
+   
+* Volumes by slicing
+** Volumes by slicing
+Another application of integration is in finding volumes if we know
+the cross sectional area of an object.  As an example, let's look at a
+right circular cone with radius \(r = 3 \) units, and height \(h =
+10\) units.
+
+If we take cross sections of this cylinder that are parallel to the
+circular base, we get a constant cross section (which is what???).
+
+Let's use the "little slice" method to figure out the volume of this
+shape!
+
+** Volumes by slicing
+
+** Volumes by slicing
+We can apply this same idea even when the cross sectional area is not
+constant, but is known.  Let's use this idea to find the volume of a
+pyramid with a square base (of side length 4 units) and a height of 5
+units.
+\vspace{10in}
+
+** Volumes by slicing
+
+** Volumes by slicing: Problem solving strategy
+We've just illustrated the "little slice method" for volumes. To apply it in general,
+use the following strategy:
+1. Examine the solid of interest and determine the shape of a
+   _\hspace*{1in}_ of the object with respect to a certain
+   direction. (You should always draw pictures at this step!)
+2. Determine a formula for the cross-sectional _\hspace*{1in}_.
+3. _\hspace*{1in}_ the area over the appropriate interval to find the
+   volume.
+
+** Example
+You want to design a building with a floor that is an isosceles
+triangle with base 6 units and legs 5 units.  The top of the building
+will be parabolas that connect the sides of equal length of the
+triangle, with heights that are equal to their widths.  What is the
+total volume of this building?
+\vspace{10in}
+
+** Example
+
+** Example

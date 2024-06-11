@@ -1,0 +1,97 @@
+% Created 2024-03-27 Wed 11:42
+% Intended LaTeX compiler: pdflatex
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\mode<beamer>{\usetheme{Madrid}}
+\definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+\definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+\setbeamercolor{palette primary}{bg=SUred,fg=white}
+\setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+\setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+\setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+\setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+\setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+\institute[SU]{Shenandoah University}
+\titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+\newcommand{\R}{\mathbb{R}}
+\usetheme{default}
+\author{Chase Mathison\thanks{cmathiso@su.edu}}
+\date{28 March 2024}
+\title{Improper Integrals, One Last Time}
+\hypersetup{
+ pdfauthor={Chase Mathison},
+ pdftitle={Improper Integrals, One Last Time},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.1 (Org mode 9.6.7)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+
+\section{Announcements}
+\label{sec:orgac7468f}
+\begin{frame}[label={sec:orgeb520a0}]{Announcements}
+\begin{enumerate}
+\item Homework in MyOpenMath.
+\item Exam corrections
+\end{enumerate}
+\end{frame}
+
+\section{Lecture}
+\label{sec:org2a84480}
+\begin{frame}[label={sec:orgcc72042}]{A Comparison Theorem}
+Let's say I want to know if
+\[
+\int\limits_1^{\infty} \frac{1}{x^2 + x}\,dx\]
+converges or diverges.  Can we say anything about convergence without
+actually evaluating this integral?
+
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org211a2a4}]{A Comparison Theorem}
+Suppose that \(0 \le f(x) \le g(x)\) for all \(x \in \left( a,\infty \right)\). Then
+\begin{itemize}
+\item If
+\(\int\limits_a^{\infty} f(x)\,dx\)
+\uline{\hspace*{1in}}, we can say that
+\[
+  \int\limits_a^{\infty} g(x)\,dx \hspace{2in}\]
+\item If
+\(\int\limits_a^{\infty} g(x)\,dx\)
+\uline{\hspace*{1in}}, we can say that
+\[
+  \int\limits_a^{\infty} f(x)\,dx \hspace{2in}\]
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label={sec:org8b8b07f}]{Example}
+Does the following integral converge or diverge?
+
+\[
+\int\limits_1^{\infty} \frac{1}{x^3 + x^2 + x + 1}\,dx\]
+\vspace{10in}
+\end{frame}
+
+\begin{frame}[label={sec:org2f60137}]{Example}
+Does the following integral converge or diverge?
+
+\[
+\int\limits_1^{\infty} \frac{1+t}{1+t^2}\,dt\]
+\vspace{10in}
+\end{frame}
+\end{document}

@@ -1,0 +1,80 @@
+#+title: Even More Taylor Series!
+#+author: Chase Mathison
+#+date: 8 May 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+** Announcements
+1. Final exam next Wednesday at 8am.
+2. If you're behind on any assignments, make sure to get them turned
+   it before the final for credit.
+
+* Lecture
+** Using the Remainder
+Because the remainder term for a Taylor polynomial is *defined* to be
+\[
+R_n(x) = p_n(x) - f(x)\]
+
+We can say that the Taylor series for the function \(f\) centered at \(a\)
+will converge to \(f\) (on it's interval of convergence) if
+\[
+\lim_{n\rightarrow \infty} R_n(x) = \hspace{1in}\]
+
+This happens with most functions in this class.
+
+** Using the Remainder
+Find the \(n\)th Taylor polynomial centered at \(0\), \(p_{n}(x)\) for
+the function \(f(x) = \cos(x)\), and the corresponding remainder term \(R_n(x).\)
+Show that for any \(x \), \(\lim_{n\rightarrow \infty}R_n(x) = 0.\)
+\vspace{10in}
+
+** Working with Taylor series
+Here are some of the most important power series for you to know:
+\vspace{10in}
+
+** Working with Taylor series
+Find the Maclaurin series for the function \(f(x) = \cos(x^2).\) Use this to find
+\(f^{(80)}(0).\)
+\vspace{10in}
+
+** Working with Taylor series
+
+** Example
+Find the Taylor series centered at \(x = 3\) for the function \(f(x) = e^x.\)
+\vspace{10in}
+
+** Example
+
+** Example
+Use a Maclaurin series to find
+\[
+\int\limits_0^1 e^{-x^2}\,dx\]
+(Your answer will be in the form of a convergent series).
+\vspace{10in}
+
+** Example

@@ -1,0 +1,105 @@
+#+title: The Geometric Series and the Divergence Test
+#+author: Chase Mathison
+#+date: 9 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usepackage{pgfplots}
+
+* Announcements
+1. Homework in MyOpenMath
+2. Office hours, 10am - 11am
+3. Free coffee and cookies on Fridays in MEC at noon.
+   
+* Lecture
+** The Geometric Series
+Now let's investigate a very special type of a series: a series in which the individual terms
+form a geometric sequence will be called a _\hspace*{1in}_ and has the form
+\[
+\sum\limits_{n=0}^{\infty} ar^n = a + ar + ar^2 + ar^3 + \ldots\]
+Let's see what we can say about a series like this.
+
+\vspace{10in}
+
+** The Geometric Series
+
+** The Geometric Series
+We've shown
+
+*** Geometric Series                                            :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+The series
+\[
+a + ar + ar^2 + ar^3 + \ldots = \sum\limits_{n=0}^{\infty} ar^n\]
+_\hspace*{2in}_ if \(|r| < 1\) and _\hspace*{1in}_ if \( |r| \ge 1.\)
+
+** Example
+
+What is
+\[
+.123123123\ldots\]
+as a fraction?
+\vspace{10in}
+
+** Example
+
+** Example
+What is the area of the Sierpinski Triangle?
+\vspace{10in}
+
+** Example
+
+** The Divergence Test
+It would be nice if, given a series, there was a quick way to tell if the series
+was divergent.  Thankfully, we have the divergence test for that!
+
+*** The Divergence Test                                         :B_theorem:
+:PROPERTIES:
+:BEAMER_env: theorem
+:END:
+
+If \(\lim_{n\rightarrow \infty} a_n \neq 0\), then the series
+\[
+\sum\limits_{n=1}^{\infty} a_n\]
+_\hspace*{1in}_.
+
+***                                                       :B_ignoreheading:
+:PROPERTIES:
+:BEAMER_env: ignoreheading
+:END:
+
+Note!
+
+** Example
+Which of the following series can we immediately say diverges?
+1. \[\sum\limits_{n=1}^{\infty} \frac{1}{n!}\]
+2. \[\sum\limits_{n=2}^{\infty} \frac{n+1}{n-1}\]
+3. \[\sum\limits_{n=1}^{\infty} n^{\frac{1}{n}}\]
+\vspace{10in}
+
+** Example

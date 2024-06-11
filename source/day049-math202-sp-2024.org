@@ -1,0 +1,151 @@
+#+title: Parametric Equations
+#+author: Chase Mathison
+#+date: 9 May 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+#+latex_header: \usepackage{tikz}
+
+* Announcements
+** Announcements
+1. Quizz in Canvas.
+2. Exam corrections due tomorrow.
+3. Final Review in Canvas.
+4. Final Exam, Wednesday at 8am.
+
+* Lecture
+** Parametric equations
+How are we used to plotting equations?  
+
+Usually, we are given an equation or a function, such as
+\[
+y = x^2 + 2x + 1 \]
+or
+\[
+x^2 + y^2 = 4 \]
+And we solve for \(y\) and plot using a table of values (if you don't
+remember what the graph looks like).  
+
+In other words, we usually have 1 _\hspace*{1in}_ variable and 1
+_\hspace*{1in}_ variable.
+
+
+But in real life, very often both \(x\) and \(y\) (and other
+variables) depend on some other independent variable called a
+_\hspace*{1in}_.
+
+This parameter is very often time, but it could be other things too.
+
+** Example
+You go on a trip to run some errands.  Here is the data for your
+position at different times.
+
+#+begin_export latex
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+\(t\) & \(x\) & \(y\)\\
+\hline
+0 & 0 & 0\\
+1 & 1 & -1\\
+2 & 2 & -1\\
+3 & 2 & 1\\
+4 & 0 & 0\\
+\hline
+\end{tabular}
+\end{center}
+#+end_export
+
+Assuming you traveled in straight lines between coordinates, draw a
+plot of the path you took on your trip.
+
+\vspace{10in}
+
+** Example
+#+begin_export latex
+\begin{tikzpicture}
+\draw[step = 0.5,black,thin] (0,0) grid (5,5);
+\end{tikzpicture}
+#+end_export
+
+** Parametric Equations
+It's a fact that any curve in the \(xy-\)plane can be represented
+with _\hspace*{1in}_.
+
+#+begin_export latex
+\begin{definition}[Parametric curve]
+If \(x\) and \(y\) are continuous functions of \(t\) on an interval
+\(I\), then the equations
+\[x = x \left( t \right), \quad y = y \left( t \right) \]
+are called parametric equations and \(t\) is called the
+\underline{\hspace{1in}}. The set of points \(\left( x,y \right)\)
+obtained as \(t\) varies over the interval \(I\) is called the \underline{\hspace{1in}}
+of the parametric equations.  The graph of parametric equations is
+called a \underline{\hspace{1in}} or \emph{plane curve}, and is denoted by \(C\).
+\end{definition}
+#+end_export
+
+** Eliminating the Parameter
+Plotting parametric equations by making tables is a fine place to
+start, but could give us misleading results.  For instance, if we try
+to plot
+
+\[
+x \left( \theta \right) = \cos \left( 4\theta \right), \quad y \left(
+\theta \right) = \sin \left( 4\theta \right), \quad 0 \le \theta \le 2\pi \]
+And we use a table with multiples of \(\pi/4\), we might be mislead
+into thinking that \(y\) is never changing.
+
+For this reason, often the best way to plot a parametric curve is to
+try to _\hspace*{1in}_ to end up with 1 equation involving
+only \(x\) and \(y\).
+
+** Example
+Let's eliminate the parameter \(t\) to plot the curve given by the
+following parametric equations in the plane:
+\[
+x \left( t \right) = t^2, \quad y \left( t \right) = t - 4, \quad -1
+\le t \le 2 \]
+\vspace{10in}
+
+** Example
+
+** Example
+Eliminate the parameter \(\theta\) to plot the curve given by the
+following parametric equations in the plane:
+\[
+x \left( \theta \right) = 8 \cos \left( \theta \right), \quad y \left(
+\theta \right) = 8 \sin \left( \theta \right), \quad 0 \le \theta \le
+2\pi \]
+\vspace{10in}
+
+** Example
+
+** Example
+Let's see how you can develop parametric equations by picking a
+parameter to work with using the example of a cycloid:
+\vspace{10in}
+
+** Example
+

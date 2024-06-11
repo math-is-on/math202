@@ -1,0 +1,97 @@
+#+title: More Taylor Series!
+#+author: Chase Mathison
+#+date: 6 May 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Exam corrections, due Friday
+2. New homework, due Friday
+3. Final Exam, Wednesday May 15, 8:00am - 10:30am.
+4. Office hours today are 12pm - 1pm.
+
+* Lecture
+** A reminder of Taylor Series
+
+Here's what we talked about last time!  Suppose \(f(x)\) is a function that
+has as many derivatives at the point \(a\) as we desire.  Then the _\hspace*{1in}_ for
+\(f\) centered at \(a\) is given by
+
+\vspace{1in}
+
+If \(a = 0\), we call the series the _\hspace*{1in}_ for \(f\).
+
+** Example
+Find the Maclaurin series for the function \(f(x) = e^x.\)  Also find the radius of convergence and interval of convergence.
+\vspace{10in}
+
+** Example
+
+** Example
+Find the Taylor series centered at \(a=1\) for the function \(f(x) =
+\ln \left( x \right)\). Also find the radius of convergence and interval of convergence.
+\vspace{10in}
+
+** Example
+
+** Taylor Polynomials and the Remainder
+
+The partial sums associated with a Taylor series is called a _\hspace*{1in}_.
+
+*** Taylor Polynomial                                        :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+
+If \(f\) has \(n\) derivatives at \(x = a\), then the \(n\)th Taylor Polynomial for \(f\) at \(a\)
+is
+\[
+p_n(x) = \hspace{2in}\]
+We also define the \(n\)th remainder as
+\[
+R_n(x) = \hspace{2in}\]
+
+** Example
+Find \(p_0(x),p_1(x),p_2(x),\) and \(p_3(x)\) at \(a = 0\) for the
+function \(f(x) = e^x.\)  Also write down the corresponding remainders.
+
+\vspace{10in}
+
+** Example
+
+** Example
+Find \(p_2(x)\) at \(a = -1\) for the function \(f(x) = \sqrt{5+x}\). What is the correponding remainder?
+\vspace{10in}
+
+** Example
+
+** Another way to write the remainder term
+Let's finish up by seeing another way to write the remainder term
+\(R_n(x)\) for a function \(f\) that has \(n+1\) derivatives at the
+point \(a\).
+\vspace{10in}
+
+** Another way to write the remainder term

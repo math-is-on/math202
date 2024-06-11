@@ -1,0 +1,125 @@
+#+title: Power Series!
+#+author: Chase Mathison
+#+date: 22 April 2024
+#+email: cmathiso@su.edu
+#+options: H:2 ':t ::t <:t email:t text:t todo:nil toc:nil 
+#+startup: showall
+#+startup: indent
+#+startup: hidestars
+#+startup: beamer
+#+latex_class: beamer
+#+latex_class_options: [presentation]
+#+COLUMNS: %40ITEM %10BEAMER_env(Env) %9BEAMER_envargs(Env Args) %5BEAMER_act(Act) %4BEAMER_col(Col) %10BEAMER_extra(Extra)
+#+latex_header: \mode<beamer>{\usetheme{Madrid}}
+#+latex_header: \definecolor{SUred}{rgb}{0.59375, 0, 0.17969} % SU red (primary)
+#+latex_header: \definecolor{SUblue}{rgb}{0, 0.17578, 0.38281} % SU blue (secondary)
+#+latex_header: \setbeamercolor{palette primary}{bg=SUred,fg=white}
+#+latex_header: \setbeamercolor{palette secondary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette tertiary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{palette quaternary}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{structure}{fg=SUblue} % itemize, enumerate, etc
+#+latex_header: \setbeamercolor{section in toc}{fg=SUblue} % TOC sections
+#+latex_header: % Override palette coloring with secondary
+#+latex_header: \setbeamercolor{subsection in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \setbeamercolor{date in head/foot}{bg=SUblue,fg=white}
+#+latex_header: \institute[SU]{Shenandoah University}
+#+latex_header: \titlegraphic{\includegraphics[width=0.5\textwidth]{\string~/Documents/suLogo/suLogo.pdf}}
+#+latex_header: \newcommand{\R}{\mathbb{R}}
+
+* Announcements
+** Announcements
+1. Homework.
+2. Project.
+3. Office hours canceled today.
+
+* Lecture
+** Power Series
+*** Power Series                                             :B_definition:
+:PROPERTIES:
+:BEAMER_env: definition
+:END:
+A series of the form \[\sum_{n=0}^\infty c_n x^n = c_0 + c_1x+c_2x^2 +
+\ldots\] is called a *power series centered at 0*. A series of the form
+\[\sum_{n=0}^\infty c_n (x-a)^n = c_0 + c_1 (x-a) + c_2 (x-a)^2+\ldots\] is
+called a _\hspace*{1in}_.
+
+** Example
+:PROPERTIES:
+:CUSTOM_ID: example
+:END:
+Which of the following are power series? What is the center of the power
+series (if it's a power series)?
+
+1. \(\sum_{n=0}^\infty \frac{x^n}{n!}\)
+
+2. \(\sum_{n=2}^\infty \frac{(-1)^n}{n} (x-1)^n\)
+
+3. \(\sum_{n=3}^\infty \frac{\sin(n x)}{n}\)
+
+\vspace{10in}   
+
+** A note on definitions
+
+***                                                               :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+For consistency, we define \(0! = 1\) and \(x^0 = 1\), even when
+\(x=0\).
+
+** Convergence of a power series
+It's always going to be the case that a power series converges at its
+center \(x = a\). There are two other cases that could happen:
+
+#+begin_center
+[[../img/convPowSer.png]]\\
+
+#+end_center
+
+/Proof:/
+
+
+** Radius and interval of convergence
+The previous theorem leads to the following definitions:
+
+#+begin_center
+[[../img/rofConv.png]]\\
+
+#+end_center
+
+\vspace{10in}
+** Examples
+Find the radius of convergence and the interval of convergence
+for the following power series (make sure to state the center of the
+series).
+
+1. \(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n
+      \frac{x^{n+1}}{n+1}\)
+
+2. \(\sum\limits_{n=3}^{\infty} 2^n \left( x-3 \right)^n\)
+
+3. \(\sum\limits_{n=1}^{\infty} \left( \frac{2x}{3} \right)^{2n}\)
+
+\vspace{10in}
+
+** Representing functions using power series
+We're one step closer to our ultimate goal, which is representing any
+(reasonable) function using better and better polynomial
+approximations. Let's look specifically at the function \[f(x) =
+\frac{1}{1-x}.\]
+\vspace{10in}
+** Representing functions using power series
+
+** Example
+Use the geometric series
+\[\sum\limits_{n=0}^{\infty} ax^n = \frac{a}{1-x}\] to find what the
+following power series converge to as functions. Make sure to find the radius
+of convergence and the interval of convergence.
+
+
+1. \(\sum\limits_{n=0}^{\infty} \left( -1 \right)^n x^n\)
+2. \(\sum\limits_{n=1}^{\infty} \left( \frac{x}{3} \right)^{2n}\)
+   
+\vspace{10in}
+
+
