@@ -1,2 +1,2 @@
 # math202
- slide SU math 202 - calculus 2
+ slides SU math 202 - calculus 2
